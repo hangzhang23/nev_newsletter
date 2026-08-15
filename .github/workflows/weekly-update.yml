@@ -67,5 +67,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "chore: update weekly data ($(date +%Y-%m-%d))"
-            git push
+            # force-with-lease 安全地处理 GA 与本地并发提交的场景
+            git push --force-with-lease
           fi
