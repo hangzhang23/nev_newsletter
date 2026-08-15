@@ -42,7 +42,7 @@
         "count": 2
       },
       {
-        "brand": "宝马",
+        "brand": "吉利银河",
         "count": 1
       },
       {
@@ -50,7 +50,7 @@
         "count": 1
       },
       {
-        "brand": "吉利银河",
+        "brand": "宝马",
         "count": 1
       },
       {
@@ -74,11 +74,11 @@
         "count": 1
       },
       {
-        "brand": "埃安",
+        "brand": "吉利",
         "count": 1
       },
       {
-        "brand": "吉利",
+        "brand": "埃安",
         "count": 1
       }
     ]
@@ -94,11 +94,11 @@
         "count": 1
       },
       {
-        "brand": "比亚迪",
+        "brand": "五菱",
         "count": 1
       },
       {
-        "brand": "五菱",
+        "brand": "比亚迪",
         "count": 1
       }
     ]
@@ -114,15 +114,15 @@
         "count": 1
       },
       {
+        "brand": "鸿蒙智行",
+        "count": 1
+      },
+      {
         "brand": "理想",
         "count": 1
       },
       {
         "brand": "零跑",
-        "count": 1
-      },
-      {
-        "brand": "鸿蒙智行",
         "count": 1
       }
     ]
@@ -162,11 +162,7 @@
     "total": 6,
     "byBrand": [
       {
-        "brand": "极狐",
-        "count": 1
-      },
-      {
-        "brand": "蔚来",
+        "brand": "名爵",
         "count": 1
       },
       {
@@ -174,7 +170,11 @@
         "count": 1
       },
       {
-        "brand": "名爵",
+        "brand": "极狐",
+        "count": 1
+      },
+      {
+        "brand": "蔚来",
         "count": 1
       },
       {
@@ -210,11 +210,11 @@
     "total": 2,
     "byBrand": [
       {
-        "brand": "乐道",
+        "brand": "smart",
         "count": 1
       },
       {
-        "brand": "smart",
+        "brand": "乐道",
         "count": 1
       }
     ]
@@ -254,11 +254,11 @@
     "total": 8,
     "byBrand": [
       {
-        "brand": "零跑",
+        "brand": "一汽-大众",
         "count": 2
       },
       {
-        "brand": "一汽-大众",
+        "brand": "零跑",
         "count": 2
       },
       {
@@ -326,15 +326,11 @@
         "count": 1
       },
       {
-        "brand": "理想",
-        "count": 1
-      },
-      {
-        "brand": "魏牌",
-        "count": 1
-      },
-      {
         "brand": "五菱",
+        "count": 1
+      },
+      {
+        "brand": "理想",
         "count": 1
       },
       {
@@ -343,6 +339,10 @@
       },
       {
         "brand": "智己",
+        "count": 1
+      },
+      {
+        "brand": "魏牌",
         "count": 1
       }
     ]
@@ -398,11 +398,11 @@
         "count": 1
       },
       {
-        "brand": "奥迪",
+        "brand": "名爵",
         "count": 1
       },
       {
-        "brand": "名爵",
+        "brand": "奥迪",
         "count": 1
       },
       {
@@ -438,11 +438,11 @@
         "count": 1
       },
       {
-        "brand": "深蓝",
+        "brand": "smart",
         "count": 1
       },
       {
-        "brand": "smart",
+        "brand": "深蓝",
         "count": 1
       },
       {
@@ -474,10 +474,6 @@
         "count": 1
       },
       {
-        "brand": "零跑",
-        "count": 1
-      },
-      {
         "brand": "上汽大众",
         "count": 1
       },
@@ -486,15 +482,19 @@
         "count": 1
       },
       {
+        "brand": "零跑",
+        "count": 1
+      },
+      {
         "brand": "红旗",
         "count": 1
       },
       {
-        "brand": "荣威",
+        "brand": "别克",
         "count": 1
       },
       {
-        "brand": "别克",
+        "brand": "荣威",
         "count": 1
       },
       {

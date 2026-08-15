@@ -66,11 +66,11 @@
         "count": 4
       },
       {
-        "band": "15-20万",
+        "band": "10-15万",
         "count": 2
       },
       {
-        "band": "10-15万",
+        "band": "15-20万",
         "count": 2
       },
       {
@@ -176,11 +176,11 @@
         "count": 1
       },
       {
-        "brand": "乐道",
+        "brand": "smart",
         "count": 1
       },
       {
-        "brand": "smart",
+        "brand": "乐道",
         "count": 1
       }
     ]
