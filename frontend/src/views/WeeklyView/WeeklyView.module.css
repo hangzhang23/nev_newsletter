@@ -1,0 +1,115 @@
+.loading,
+.empty {
+  text-align: center;
+  color: var(--text-3);
+  padding: 60px 0;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.week {
+  margin-bottom: 20px;
+}
+
+.weekHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.weekCount {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.table th {
+  text-align: left;
+  font-size: 12px;
+  color: var(--text-3);
+  font-weight: 600;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 10px;
+  font-size: 13px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border-2);
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.table tbody tr:hover {
+  background: var(--surface);
+}
+
+.name {
+  font-weight: 600;
+}
+
+.price {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 12px;
+    background: var(--surface);
+  }
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--border-2);
+    white-space: normal;
+    text-align: right;
+  }
+  .table td:last-child {
+    border-bottom: none;
+  }
+  .table td::before {
+    content: attr(data-label);
+    color: var(--text-3);
+    flex-shrink: 0;
+    text-align: left;
+  }
+}

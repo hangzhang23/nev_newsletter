@@ -1,0 +1,39 @@
+{
+  "name": "电车周志·品牌颜色映射表（全站一致）",
+  "generated_at": "2026-08-15",
+  "data_window": "2026-04-12 ~ 2026-08-15（约4个月/19周，W15-W33 缺 W17）",
+  "rules": {
+    "independent_min_frequency": 3,
+    "independent_rationale": "频次≥3，平均≤1.4个月发一次，属高频，独立配色",
+    "merged_into_other_max_frequency": 2,
+    "merged_rationale": "频次≤2，平均≥2个月才发一次，接近3个月一次，归入「其他」"
+  },
+  "brands": [
+    { "rank": 1,  "name": "比亚迪",   "color": "#EF4444", "frequency": 13 },
+    { "rank": 2,  "name": "鸿蒙智行", "color": "#A855F7", "frequency": 12 },
+    { "rank": 3,  "name": "零跑",     "color": "#F97316", "frequency": 10 },
+    { "rank": 4,  "name": "小鹏",     "color": "#3B82F6", "frequency": 6 },
+    { "rank": 5,  "name": "五菱",     "color": "#EAB308", "frequency": 5 },
+    { "rank": 6,  "name": "魏牌",     "color": "#B45309", "frequency": 5 },
+    { "rank": 7,  "name": "极氪",     "color": "#14B8A6", "frequency": 4 },
+    { "rank": 8,  "name": "理想",     "color": "#A3E635", "frequency": 4 },
+    { "rank": 9,  "name": "smart",    "color": "#EC4899", "frequency": 3 },
+    { "rank": 10, "name": "一汽-大众", "color": "#64748B", "frequency": 3 },
+    { "rank": 11, "name": "吉利银河", "color": "#22C55E", "frequency": 3 },
+    { "rank": 12, "name": "奇瑞风云", "color": "#4F46E5", "frequency": 3 },
+    { "rank": 13, "name": "奥迪",     "color": "#9CA3AF", "frequency": 3 },
+    { "rank": 14, "name": "蔚来",     "color": "#0EA5E9", "frequency": 3 }
+  ],
+  "other": {
+    "name": "其他",
+    "color": "#525252",
+    "frequency_2_brands": ["乐道", "别克", "吉利", "名爵", "埃安", "奕派", "小米", "岚图", "星途", "智己", "极狐", "红旗", "腾势", "长城", "长安马自达", "领克"],
+    "frequency_1_brands": ["一汽悦意", "上汽大众", "北京越野", "启境", "坦克", "奇瑞", "奇瑞捷豹路虎", "奔驰", "宝马", "沃尔沃", "深蓝", "猛士", "神行者", "纵横", "荣威", "萤火虫", "阿维塔"]
+  },
+  "notes": [
+    "鸿蒙智行=问界/智界/享界/尊界/尚界四界归并（华为系）",
+    "品牌色避开主强调色#00E676(价格)与次强调色#22D3EE(定位tag)，避免语义混淆",
+    "映射表随数据累积定期重算（当数据窗口达到一年时按年化频次重排）",
+    "W33 新增品牌（上汽大众/荣威/奇瑞/奇瑞捷豹路虎/神行者）频次均≤2，归入「其他」"
+  ]
+}

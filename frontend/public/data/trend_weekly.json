@@ -1,0 +1,514 @@
+[
+  {
+    "week": "W15",
+    "start": "2026-04-12",
+    "end": "2026-04-18",
+    "total": 7,
+    "byBrand": [
+      {
+        "brand": "小鹏",
+        "count": 2
+      },
+      {
+        "brand": "零跑",
+        "count": 2
+      },
+      {
+        "brand": "极氪",
+        "count": 2
+      },
+      {
+        "brand": "智己",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W16",
+    "start": "2026-04-19",
+    "end": "2026-04-25",
+    "total": 14,
+    "byBrand": [
+      {
+        "brand": "鸿蒙智行",
+        "count": 5
+      },
+      {
+        "brand": "比亚迪",
+        "count": 3
+      },
+      {
+        "brand": "长安马自达",
+        "count": 2
+      },
+      {
+        "brand": "宝马",
+        "count": 1
+      },
+      {
+        "brand": "一汽-大众",
+        "count": 1
+      },
+      {
+        "brand": "吉利银河",
+        "count": 1
+      },
+      {
+        "brand": "沃尔沃",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W18",
+    "start": "2026-04-27",
+    "end": "2026-05-02",
+    "total": 5,
+    "byBrand": [
+      {
+        "brand": "比亚迪",
+        "count": 2
+      },
+      {
+        "brand": "五菱",
+        "count": 1
+      },
+      {
+        "brand": "埃安",
+        "count": 1
+      },
+      {
+        "brand": "吉利",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W19",
+    "start": "2026-05-04",
+    "end": "2026-05-09",
+    "total": 3,
+    "byBrand": [
+      {
+        "brand": "奕派",
+        "count": 1
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "五菱",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W20",
+    "start": "2026-05-10",
+    "end": "2026-05-16",
+    "total": 4,
+    "byBrand": [
+      {
+        "brand": "蔚来",
+        "count": 1
+      },
+      {
+        "brand": "理想",
+        "count": 1
+      },
+      {
+        "brand": "零跑",
+        "count": 1
+      },
+      {
+        "brand": "鸿蒙智行",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W21",
+    "start": "2026-05-17",
+    "end": "2026-05-23",
+    "total": 6,
+    "byBrand": [
+      {
+        "brand": "小米",
+        "count": 2
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "魏牌",
+        "count": 1
+      },
+      {
+        "brand": "小鹏",
+        "count": 1
+      },
+      {
+        "brand": "岚图",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W22",
+    "start": "2026-05-24",
+    "end": "2026-05-30",
+    "total": 6,
+    "byBrand": [
+      {
+        "brand": "极狐",
+        "count": 1
+      },
+      {
+        "brand": "蔚来",
+        "count": 1
+      },
+      {
+        "brand": "鸿蒙智行",
+        "count": 1
+      },
+      {
+        "brand": "名爵",
+        "count": 1
+      },
+      {
+        "brand": "吉利",
+        "count": 1
+      },
+      {
+        "brand": "奥迪",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W23",
+    "start": "2026-05-31",
+    "end": "2026-06-06",
+    "total": 2,
+    "byBrand": [
+      {
+        "brand": "零跑",
+        "count": 1
+      },
+      {
+        "brand": "奔驰",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W24",
+    "start": "2026-06-07",
+    "end": "2026-06-13",
+    "total": 2,
+    "byBrand": [
+      {
+        "brand": "乐道",
+        "count": 1
+      },
+      {
+        "brand": "smart",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W25",
+    "start": "2026-06-14",
+    "end": "2026-06-20",
+    "total": 7,
+    "byBrand": [
+      {
+        "brand": "零跑",
+        "count": 3
+      },
+      {
+        "brand": "极狐",
+        "count": 1
+      },
+      {
+        "brand": "魏牌",
+        "count": 1
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "鸿蒙智行",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W26",
+    "start": "2026-06-21",
+    "end": "2026-06-27",
+    "total": 8,
+    "byBrand": [
+      {
+        "brand": "零跑",
+        "count": 2
+      },
+      {
+        "brand": "一汽-大众",
+        "count": 2
+      },
+      {
+        "brand": "理想",
+        "count": 1
+      },
+      {
+        "brand": "腾势",
+        "count": 1
+      },
+      {
+        "brand": "启境",
+        "count": 1
+      },
+      {
+        "brand": "猛士",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W27",
+    "start": "2026-06-28",
+    "end": "2026-07-04",
+    "total": 1,
+    "byBrand": [
+      {
+        "brand": "比亚迪",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W28",
+    "start": "2026-07-05",
+    "end": "2026-07-11",
+    "total": 4,
+    "byBrand": [
+      {
+        "brand": "吉利银河",
+        "count": 1
+      },
+      {
+        "brand": "坦克",
+        "count": 1
+      },
+      {
+        "brand": "奇瑞风云",
+        "count": 1
+      },
+      {
+        "brand": "蔚来",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W29",
+    "start": "2026-07-12",
+    "end": "2026-07-18",
+    "total": 6,
+    "byBrand": [
+      {
+        "brand": "一汽悦意",
+        "count": 1
+      },
+      {
+        "brand": "理想",
+        "count": 1
+      },
+      {
+        "brand": "魏牌",
+        "count": 1
+      },
+      {
+        "brand": "五菱",
+        "count": 1
+      },
+      {
+        "brand": "小鹏",
+        "count": 1
+      },
+      {
+        "brand": "智己",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W30",
+    "start": "2026-07-19",
+    "end": "2026-07-25",
+    "total": 7,
+    "byBrand": [
+      {
+        "brand": "星途",
+        "count": 1
+      },
+      {
+        "brand": "萤火虫",
+        "count": 1
+      },
+      {
+        "brand": "北京越野",
+        "count": 1
+      },
+      {
+        "brand": "吉利银河",
+        "count": 1
+      },
+      {
+        "brand": "奕派",
+        "count": 1
+      },
+      {
+        "brand": "领克",
+        "count": 1
+      },
+      {
+        "brand": "奇瑞风云",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W31",
+    "start": "2026-07-25",
+    "end": "2026-07-31",
+    "total": 5,
+    "byBrand": [
+      {
+        "brand": "奇瑞风云",
+        "count": 1
+      },
+      {
+        "brand": "极氪",
+        "count": 1
+      },
+      {
+        "brand": "奥迪",
+        "count": 1
+      },
+      {
+        "brand": "名爵",
+        "count": 1
+      },
+      {
+        "brand": "五菱",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W32",
+    "start": "2026-08-02",
+    "end": "2026-08-08",
+    "total": 12,
+    "byBrand": [
+      {
+        "brand": "鸿蒙智行",
+        "count": 3
+      },
+      {
+        "brand": "红旗",
+        "count": 1
+      },
+      {
+        "brand": "腾势",
+        "count": 1
+      },
+      {
+        "brand": "别克",
+        "count": 1
+      },
+      {
+        "brand": "长城",
+        "count": 1
+      },
+      {
+        "brand": "深蓝",
+        "count": 1
+      },
+      {
+        "brand": "smart",
+        "count": 1
+      },
+      {
+        "brand": "纵横",
+        "count": 1
+      },
+      {
+        "brand": "阿维塔",
+        "count": 1
+      },
+      {
+        "brand": "埃安",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W33",
+    "start": "2026-08-09",
+    "end": "2026-08-15",
+    "total": 14,
+    "byBrand": [
+      {
+        "brand": "比亚迪",
+        "count": 4
+      },
+      {
+        "brand": "奇瑞",
+        "count": 1
+      },
+      {
+        "brand": "零跑",
+        "count": 1
+      },
+      {
+        "brand": "上汽大众",
+        "count": 1
+      },
+      {
+        "brand": "小鹏",
+        "count": 1
+      },
+      {
+        "brand": "红旗",
+        "count": 1
+      },
+      {
+        "brand": "荣威",
+        "count": 1
+      },
+      {
+        "brand": "别克",
+        "count": 1
+      },
+      {
+        "brand": "奇瑞捷豹路虎",
+        "count": 1
+      },
+      {
+        "brand": "魏牌",
+        "count": 1
+      },
+      {
+        "brand": "岚图",
+        "count": 1
+      }
+    ]
+  }
+]

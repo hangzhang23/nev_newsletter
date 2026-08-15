@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# env
+.env
+.env.local
+.env.*.local
+
+# build output
+dist/
+frontend/dist/
+frontend/.vite/
+frontend/vite.config.js
+frontend/vite.config.d.ts
+frontend/tsconfig.tsbuildinfo
+frontend/tsconfig.node.tsbuildinfo
+
+# local memory / workspace data
+.codebuddy/
+
+# logs
+*.log
+npm-debug.log*
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# test
+coverage/

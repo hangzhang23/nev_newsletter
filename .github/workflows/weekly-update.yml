@@ -1,0 +1,71 @@
+name: Weekly Data Update
+
+# 免登录方案：定时 + 手动触发
+# 1) 用 data/ 目录中的周报 CSV 更新 Supabase（ingest）
+# 2) 从 Supabase 预渲染前端 JSON（prerender）
+# 3) 把生成的 JSON 提交回仓库 → Vercel 自动部署
+#
+# 前置条件（GitHub → Settings → Secrets and variables → Actions）：
+#   SUPABASE_URL              e.g. https://xxxx.supabase.co
+#   SUPABASE_SERVICE_ROLE_KEY  service_role 密钥（仅 Actions 使用）
+#
+# 手动触发：仓库 Actions → Weekly Data Update → Run workflow
+on:
+  schedule:
+    # 每周日 00:30 UTC（北京时间 08:30），周报自动化通常周五产出
+    - cron: "30 0 * * 0"
+  workflow_dispatch: {}
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许提交生成的 JSON
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Verify data files present
+        run: |
+          COUNT=$(ls data/NEV_weekly_report_*.csv 2>/dev/null | wc -l)
+          echo "CSV files in data/: $COUNT"
+          if [ "$COUNT" -eq 0 ]; then
+            echo "::error::data/ 目录没有周报 CSV。请先运行 npm run sync:data 并提交。"
+            exit 1
+          fi
+
+      - name: Ingest to Supabase
+        run: npm run ingest
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEV_DATA_DIR: data
+
+      - name: Prerender static JSON
+        run: npm run prerender
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Commit generated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update weekly data ($(date +%Y-%m-%d))"
+            git push
+          fi

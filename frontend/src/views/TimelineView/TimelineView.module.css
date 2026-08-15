@@ -1,0 +1,64 @@
+.loading,
+.empty {
+  text-align: center;
+  color: var(--text-3);
+  padding: 60px 0;
+}
+
+.trendCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.month {
+  margin-bottom: 16px;
+}
+
+.monthHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  text-align: left;
+}
+
+.monthName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.monthCount {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.chevron {
+  margin-left: auto;
+  color: var(--text-3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 12px 0;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

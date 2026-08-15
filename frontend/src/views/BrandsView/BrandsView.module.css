@@ -1,0 +1,105 @@
+.loading {
+  text-align: center;
+  color: var(--text-3);
+  padding: 60px 0;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.panel h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.brandList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.brandName {
+  width: 88px;
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.barTrack {
+  flex: 1;
+  height: 8px;
+  background: var(--surface-2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.brandFreq {
+  width: 24px;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--text-2);
+  text-align: right;
+}
+
+.donut {
+  height: 280px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.legendItem {
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.legendItem b {
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

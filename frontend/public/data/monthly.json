@@ -1,0 +1,328 @@
+[
+  {
+    "month": "2026-04",
+    "total": 26,
+    "priceBands": [
+      {
+        "band": "30万以上",
+        "count": 10
+      },
+      {
+        "band": "20-30万",
+        "count": 8
+      },
+      {
+        "band": "10-15万",
+        "count": 2
+      },
+      {
+        "band": "待公布",
+        "count": 6
+      }
+    ],
+    "powertrains": [
+      {
+        "type": "纯电",
+        "count": 13
+      },
+      {
+        "type": "增程",
+        "count": 7
+      },
+      {
+        "type": "插混",
+        "count": 6
+      }
+    ],
+    "topBrands": [
+      {
+        "brand": "鸿蒙智行",
+        "count": 5
+      },
+      {
+        "brand": "比亚迪",
+        "count": 5
+      },
+      {
+        "brand": "小鹏",
+        "count": 2
+      },
+      {
+        "brand": "零跑",
+        "count": 2
+      },
+      {
+        "brand": "极氪",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "month": "2026-05",
+    "total": 19,
+    "priceBands": [
+      {
+        "band": "10万内",
+        "count": 4
+      },
+      {
+        "band": "15-20万",
+        "count": 2
+      },
+      {
+        "band": "10-15万",
+        "count": 2
+      },
+      {
+        "band": "20-30万",
+        "count": 5
+      },
+      {
+        "band": "30万以上",
+        "count": 6
+      }
+    ],
+    "powertrains": [
+      {
+        "type": "纯电",
+        "count": 8
+      },
+      {
+        "type": "增程",
+        "count": 6
+      },
+      {
+        "type": "插混",
+        "count": 5
+      }
+    ],
+    "topBrands": [
+      {
+        "brand": "比亚迪",
+        "count": 2
+      },
+      {
+        "brand": "蔚来",
+        "count": 2
+      },
+      {
+        "brand": "鸿蒙智行",
+        "count": 2
+      },
+      {
+        "brand": "小米",
+        "count": 2
+      },
+      {
+        "brand": "奕派",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "month": "2026-06",
+    "total": 19,
+    "priceBands": [
+      {
+        "band": "待公布",
+        "count": 1
+      },
+      {
+        "band": "30万以上",
+        "count": 4
+      },
+      {
+        "band": "15-20万",
+        "count": 5
+      },
+      {
+        "band": "10万内",
+        "count": 1
+      },
+      {
+        "band": "10-15万",
+        "count": 3
+      },
+      {
+        "band": "20-30万",
+        "count": 5
+      }
+    ],
+    "powertrains": [
+      {
+        "type": "增程",
+        "count": 8
+      },
+      {
+        "type": "插混",
+        "count": 6
+      },
+      {
+        "type": "纯电",
+        "count": 5
+      }
+    ],
+    "topBrands": [
+      {
+        "brand": "零跑",
+        "count": 6
+      },
+      {
+        "brand": "一汽-大众",
+        "count": 2
+      },
+      {
+        "brand": "奔驰",
+        "count": 1
+      },
+      {
+        "brand": "乐道",
+        "count": 1
+      },
+      {
+        "brand": "smart",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "month": "2026-07",
+    "total": 23,
+    "priceBands": [
+      {
+        "band": "15-20万",
+        "count": 5
+      },
+      {
+        "band": "10万内",
+        "count": 3
+      },
+      {
+        "band": "10-15万",
+        "count": 7
+      },
+      {
+        "band": "30万以上",
+        "count": 5
+      },
+      {
+        "band": "20-30万",
+        "count": 3
+      }
+    ],
+    "powertrains": [
+      {
+        "type": "纯电",
+        "count": 9
+      },
+      {
+        "type": "增程",
+        "count": 7
+      },
+      {
+        "type": "插混",
+        "count": 5
+      },
+      {
+        "type": "未知",
+        "count": 1
+      },
+      {
+        "type": "燃油",
+        "count": 1
+      }
+    ],
+    "topBrands": [
+      {
+        "brand": "奇瑞风云",
+        "count": 3
+      },
+      {
+        "brand": "吉利银河",
+        "count": 2
+      },
+      {
+        "brand": "五菱",
+        "count": 2
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "坦克",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "month": "2026-08",
+    "total": 26,
+    "priceBands": [
+      {
+        "band": "15-20万",
+        "count": 4
+      },
+      {
+        "band": "30万以上",
+        "count": 5
+      },
+      {
+        "band": "20-30万",
+        "count": 6
+      },
+      {
+        "band": "10-15万",
+        "count": 6
+      },
+      {
+        "band": "待公布",
+        "count": 2
+      },
+      {
+        "band": "10万内",
+        "count": 3
+      }
+    ],
+    "powertrains": [
+      {
+        "type": "纯电",
+        "count": 11
+      },
+      {
+        "type": "插混",
+        "count": 8
+      },
+      {
+        "type": "增程",
+        "count": 6
+      },
+      {
+        "type": "燃油",
+        "count": 1
+      }
+    ],
+    "topBrands": [
+      {
+        "brand": "比亚迪",
+        "count": 4
+      },
+      {
+        "brand": "鸿蒙智行",
+        "count": 3
+      },
+      {
+        "brand": "红旗",
+        "count": 2
+      },
+      {
+        "brand": "别克",
+        "count": 2
+      },
+      {
+        "brand": "腾势",
+        "count": 1
+      }
+    ]
+  }
+]

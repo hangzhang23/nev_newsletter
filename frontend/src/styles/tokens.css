@@ -1,0 +1,13 @@
+:root {
+  --bg: #0a0e14;
+  --surface: #141a22;
+  --surface-2: #0f151e;
+  --border: #232b36;
+  --border-2: #1e2733;
+  --text: #e6edf3;
+  --text-2: #9aa7b4;
+  --text-3: #5c6b7a;
+  --accent: #00e676; /* 主强调：价格、激活态 */
+  --accent-2: #22d3ee; /* 次强调：定位 tag */
+  --radius: 12px;
+}
