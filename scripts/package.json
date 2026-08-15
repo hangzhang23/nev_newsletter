@@ -1,0 +1,23 @@
+{
+  "name": "nev-scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx ingest/index.ts",
+    "prerender": "tsx prerender/index.ts",
+    "test": "vitest run",
+    "aggregate:test": "vitest run prerender/aggregate.test.ts",
+    "normalize:test": "vitest run ingest/normalize.test.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.0"
+  }
+}

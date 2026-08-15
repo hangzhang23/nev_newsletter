@@ -33,8 +33,11 @@ jobs:
           node-version: 24
           cache: npm
 
-      - name: Install deps
-        run: npm ci --no-audit --no-fund
+      - name: Install frontend deps
+        run: cd frontend && npm ci --no-audit --no-fund
+
+      - name: Install scripts deps
+        run: cd scripts && npm ci --no-audit --no-fund
 
       - name: Verify data files present
         run: |

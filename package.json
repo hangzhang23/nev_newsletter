@@ -2,29 +2,14 @@
   "name": "nev-site",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",
-    "ingest": "tsx scripts/ingest/index.ts",
-    "prerender": "tsx scripts/prerender/index.ts",
+    "ingest": "cd scripts && npm run ingest",
+    "prerender": "cd scripts && npm run prerender",
     "sync:data": "node scripts/sync-data.mjs",
-    "typecheck": "cd frontend && tsc --noEmit",
-    "test": "vitest run",
-    "deploy": "npm run build && vercel --prod"
-  },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.45.0",
-    "@vercel/node": "^3.2.0",
-    "dotenv": "^16.4.5"
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.0",
-    "@types/node": "^22.5.0",
-    "tsx": "^4.19.0",
-    "typescript": "^5.5.4",
-    "vercel": "^59.0.0",
-    "vitest": "^2.1.0"
+    "typecheck": "cd frontend && npm run typecheck",
+    "test": "cd scripts && npm test && cd ../frontend && npm test",
+    "deploy": "cd frontend && npm run build"
   }
 }

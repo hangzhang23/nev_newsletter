@@ -2,7 +2,7 @@ import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   test: {
-    include: ['scripts/**/*.test.ts', 'frontend/src/**/*.test.ts'],
+    include: ['ingest/**/*.test.ts', 'prerender/**/*.test.ts'],
     environment: 'node',
   },
 });
