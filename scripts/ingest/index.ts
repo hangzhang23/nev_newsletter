@@ -7,6 +7,7 @@ import { csvToRecords } from '../shared/csv';
 import { buildBrandColorMap, rowToVehicle } from './normalize';
 import { weekOfFilename } from '../shared/weeks';
 import type { BrandColorsDoc, Vehicle, WeekMeta } from '../shared/types';
+import { upsertDataset, type UpsertClient } from './upsert';
 
 const DATA_DIR = process.env.NEV_DATA_DIR || 'e:/workbuddy/space';
 
@@ -61,15 +62,12 @@ async function main(): Promise<void> {
     return { name, color: bc.color, is_primary: bc.isPrimary, frequency };
   });
 
-  // upsert 三表（幂等）
-  await supabase.from('vehicles').upsert([...vehicles.values()], { onConflict: 'name' });
-  await supabase
-    .from('weeks')
-    .upsert(
-      weekMetas.map((w) => ({ week: w.week, start_date: w.start, end_date: w.end })),
-      { onConflict: 'week' },
-    );
-  await supabase.from('brands').upsert(brands, { onConflict: 'name' });
+  // upsert 三表（幂等）；任一写入失败立即中止，避免发布部分更新的快照。
+  await upsertDataset(supabase as unknown as UpsertClient, {
+    vehicles: [...vehicles.values()],
+    weeks: weekMetas.map((w) => ({ week: w.week, start_date: w.start, end_date: w.end })),
+    brands,
+  });
 
   console.log(
     `已 upsert：vehicles ${vehicles.size} 款 / weeks ${weekMetas.length} 周 / brands ${brands.length} 个`,

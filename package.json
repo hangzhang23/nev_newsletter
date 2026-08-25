@@ -7,6 +7,8 @@
     "build": "cd frontend && npm run build",
     "ingest": "cd scripts && npm run ingest",
     "prerender": "cd scripts && npm run prerender",
+    "publish:data": "cd scripts && npm run publish:data",
+    "validate:snapshot": "cd scripts && npm run validate:snapshot",
     "sync:data": "node scripts/sync-data.mjs",
     "typecheck": "cd frontend && npm run typecheck",
     "test": "cd scripts && npm test && cd ../frontend && npm test",

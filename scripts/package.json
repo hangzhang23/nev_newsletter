@@ -6,6 +6,8 @@
   "scripts": {
     "ingest": "tsx ingest/index.ts",
     "prerender": "tsx prerender/index.ts",
+    "publish:data": "tsx publish/index.ts",
+    "validate:snapshot": "tsx validate-snapshot/index.ts",
     "test": "vitest run",
     "aggregate:test": "vitest run prerender/aggregate.test.ts",
     "normalize:test": "vitest run ingest/normalize.test.ts"
