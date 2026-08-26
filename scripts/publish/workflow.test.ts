@@ -30,4 +30,14 @@ describe('weekly data workflow', () => {
     expect(executableLines).not.toMatch(/git\s+push[^\n]*(?:--force|-f\b)/);
     expect(executableLines).not.toContain('force-with-lease');
   });
+  it('runs a safe validation-only path for pull requests', () => {
+    expect(workflow).toContain('pull_request:');
+    expect(workflow).toContain("if: github.event_name != 'pull_request'");
+  });
+
+  it('requires committed lockfiles for deterministic installs', () => {
+    expect(fs.existsSync(path.resolve(process.cwd(), 'package-lock.json'))).toBe(true);
+    expect(fs.existsSync(path.resolve(process.cwd(), '../frontend/package-lock.json'))).toBe(true);
+  });
+
 });

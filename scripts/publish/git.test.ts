@@ -52,4 +52,33 @@ describe('publishData', () => {
     expect(publishData({ sourceDir: source, remote }).status).toBe('pushed');
     expect(publishData({ sourceDir: source, remote })).toEqual({ status: 'unchanged', period: '20260816_20260822' });
   });
+  it('retries after the remote branch advances during publication', () => {
+    const { source, remote } = fixture();
+    let raced = false;
+    const result = publishData(
+      { sourceDir: source, remote },
+      {
+        beforePush() {
+          if (raced) return;
+          raced = true;
+          const competitor = path.join(path.dirname(remote), 'competitor');
+          run(['clone', '--branch', 'main', remote, competitor]);
+          run(['config', 'user.name', 'competitor'], competitor);
+          run(['config', 'user.email', 'competitor@example.com'], competitor);
+          fs.writeFileSync(path.join(competitor, 'RACE.md'), 'remote advanced');
+          run(['add', 'RACE.md'], competitor);
+          run(['commit', '-m', 'competing update'], competitor);
+          run(['push', 'origin', 'main'], competitor);
+        },
+      },
+    );
+
+    expect(raced).toBe(true);
+    expect(result.status).toBe('pushed');
+    const check = path.join(path.dirname(remote), 'race-check');
+    run(['clone', '--branch', 'main', remote, check]);
+    expect(fs.readFileSync(path.join(check, 'RACE.md'), 'utf8')).toBe('remote advanced');
+    expect(fs.existsSync(path.join(check, 'data', 'NEV_weekly_report_20260816_20260822.csv'))).toBe(true);
+  });
+
 });

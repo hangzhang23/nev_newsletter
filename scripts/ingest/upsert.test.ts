@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { upsertDataset, type Dataset, type UpsertClient } from './upsert';
+import { replaceDataset, type Dataset, type ReplaceClient } from './upsert';
 
 const dataset: Dataset = {
   vehicles: [{ name: '测试车' }],
@@ -7,37 +7,40 @@ const dataset: Dataset = {
   brands: [{ name: '测试品牌' }],
 };
 
-function fakeClient(failureTable?: string): { client: UpsertClient; calls: string[] } {
-  const calls: string[] = [];
+function fakeClient(error: Error | null = null): {
+  client: ReplaceClient;
+  calls: Array<{ name: string; args: Record<string, unknown> }>;
+} {
+  const calls: Array<{ name: string; args: Record<string, unknown> }> = [];
   return {
     calls,
     client: {
-      from(table: string) {
-        return {
-          async upsert() {
-            calls.push(table);
-            return { error: table === failureTable ? new Error(`${table} failed`) : null };
-          },
-        };
+      async rpc(name, args) {
+        calls.push({ name, args });
+        return { error };
       },
     },
   };
 }
 
-describe('upsertDataset', () => {
-  it('writes all datasets in dependency order', async () => {
+describe('replaceDataset', () => {
+  it('replaces all tables through one transactional RPC call', async () => {
     const { client, calls } = fakeClient();
-    await upsertDataset(client, dataset);
-    expect(calls).toEqual(['vehicles', 'weeks', 'brands']);
+    await replaceDataset(client, dataset);
+    expect(calls).toEqual([
+      {
+        name: 'replace_nev_dataset',
+        args: {
+          p_vehicles: dataset.vehicles,
+          p_weeks: dataset.weeks,
+          p_brands: dataset.brands,
+        },
+      },
+    ]);
   });
 
-  it.each([
-    ['vehicles', ['vehicles']],
-    ['weeks', ['vehicles', 'weeks']],
-    ['brands', ['vehicles', 'weeks', 'brands']],
-  ] as const)('stops when %s returns an error', async (table, expectedCalls) => {
-    const { client, calls } = fakeClient(table);
-    await expect(upsertDataset(client, dataset)).rejects.toThrow(`${table} failed`);
-    expect(calls).toEqual(expectedCalls);
+  it('propagates an RPC failure', async () => {
+    const { client } = fakeClient(new Error('replace failed'));
+    await expect(replaceDataset(client, dataset)).rejects.toThrow('replace failed');
   });
 });

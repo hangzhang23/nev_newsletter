@@ -3,6 +3,12 @@ name: Weekly Data Update
 # WorkBuddy pushes validated CSV snapshots to data/. This workflow owns the cloud half:
 # test -> ingest Supabase -> prerender JSON -> verify freshness -> commit JSON -> Vercel deploy.
 on:
+  pull_request:
+    paths:
+      - ".github/workflows/weekly-update.yml"
+      - "scripts/**"
+      - "frontend/**"
+      - "package.json"
   push:
     branches: [main]
     paths:
@@ -63,6 +69,7 @@ jobs:
         run: npm --prefix frontend run build
 
       - name: Ingest to Supabase
+        if: github.event_name != 'pull_request'
         run: npm run ingest
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -70,18 +77,21 @@ jobs:
           NEV_DATA_DIR: data
 
       - name: Prerender static JSON
+        if: github.event_name != 'pull_request'
         run: npm run prerender
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
       - name: Verify snapshot freshness
+        if: github.event_name != 'pull_request'
         run: npm run validate:snapshot
         env:
           NEV_DATA_DIR: data
           NEV_PUBLIC_DATA_DIR: frontend/public/data
 
       - name: Commit and push generated JSON
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
