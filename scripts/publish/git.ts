@@ -13,6 +13,7 @@ export interface PublishOptions {
 
 export interface PublishHooks {
   beforePush?: (context: { cloneDir: string; attempt: number }) => void;
+  afterPush?: (context: { cloneDir: string; attempt: number }) => void;
 }
 
 export interface PublishResult {
@@ -71,9 +72,14 @@ function publishOnce(
       throw new Error(`git push 失败: ${push.output.trim()}`);
     }
 
+    hooks.afterPush?.({ cloneDir, attempt });
     const head = git(['rev-parse', 'HEAD'], cloneDir).trim();
-    const remoteHead = git(['ls-remote', 'origin', `refs/heads/${options.branch}`], cloneDir).split(/\s/)[0];
-    if (!remoteHead || head !== remoteHead) throw new Error(`git push 后远端校验失败: ${push.output.trim()}`);
+    git(['fetch', 'origin', options.branch], cloneDir);
+    const remoteHead = git(['rev-parse', 'FETCH_HEAD'], cloneDir).trim();
+    const published = gitResult(['merge-base', '--is-ancestor', head, remoteHead], cloneDir);
+    if (published.status !== 0) {
+      throw new Error('post-push verification failed: published commit is not in remote history');
+    }
     return { status: 'pushed', period: selection.latestPeriod };
   } finally {
     fs.rmSync(tempRoot, { recursive: true, force: true });

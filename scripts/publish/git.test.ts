@@ -81,4 +81,33 @@ describe('publishData', () => {
     expect(fs.existsSync(path.join(check, 'data', 'NEV_weekly_report_20260816_20260822.csv'))).toBe(true);
   });
 
+  it('accepts success when the remote advances again after this push', () => {
+    const { source, remote } = fixture();
+    let advanced = false;
+    const result = publishData(
+      { sourceDir: source, remote },
+      {
+        afterPush() {
+          if (advanced) return;
+          advanced = true;
+          const follower = path.join(path.dirname(remote), 'follower');
+          run(['clone', '--branch', 'main', remote, follower]);
+          run(['config', 'user.name', 'follower'], follower);
+          run(['config', 'user.email', 'follower@example.com'], follower);
+          fs.writeFileSync(path.join(follower, 'AFTER.md'), 'remote advanced after push');
+          run(['add', 'AFTER.md'], follower);
+          run(['commit', '-m', 'follow-up update'], follower);
+          run(['push', 'origin', 'main'], follower);
+        },
+      },
+    );
+
+    expect(advanced).toBe(true);
+    expect(result.status).toBe('pushed');
+    const check = path.join(path.dirname(remote), 'after-check');
+    run(['clone', '--branch', 'main', remote, check]);
+    expect(fs.existsSync(path.join(check, 'data', 'NEV_weekly_report_20260816_20260822.csv'))).toBe(true);
+    expect(fs.readFileSync(path.join(check, 'AFTER.md'), 'utf8')).toBe('remote advanced after push');
+  });
+
 });

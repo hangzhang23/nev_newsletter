@@ -1,0 +1,56 @@
+name: Pull Request Validation
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+      - "scripts/**"
+      - "frontend/**"
+      - "package.json"
+      - "data/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            scripts/package-lock.json
+            frontend/package-lock.json
+
+      - name: Install scripts dependencies
+        run: npm --prefix scripts ci --no-audit --no-fund
+
+      - name: Install frontend dependencies
+        run: npm --prefix frontend ci --no-audit --no-fund
+
+      - name: Verify input data
+        run: |
+          COUNT=$(find data -maxdepth 1 -type f -name 'NEV_weekly_report_*.csv' | wc -l)
+          echo "CSV files in data/: $COUNT"
+          test "$COUNT" -gt 0 || { echo "::error::data/ has no weekly CSV files"; exit 1; }
+          test -s data/brand_colors.json || { echo "::error::data/brand_colors.json is missing or empty"; exit 1; }
+
+      - name: Test scripts
+        run: npm --prefix scripts test
+
+      - name: Test frontend
+        run: npm --prefix frontend test
+
+      - name: Typecheck frontend
+        run: npm --prefix frontend run typecheck
+
+      - name: Build frontend
+        run: npm --prefix frontend run build
