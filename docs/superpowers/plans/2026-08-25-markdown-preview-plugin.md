@@ -350,4 +350,3 @@ Confirm an incorrect token returns 404, `/etc/passwd` is rejected as both a docu
 - [ ] **Step 6: Final handoff**
 
 Tell the user to start a new Codex task so the installed skill is loaded. Provide the generated Codex `View markdown-preview` and `Share markdown-preview` personal-marketplace links using the absolute marketplace path.
-

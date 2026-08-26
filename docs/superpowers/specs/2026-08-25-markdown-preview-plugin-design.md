@@ -83,4 +83,3 @@ Manual verification covers Markdown tables, task lists, code blocks, Mermaid, lo
 ## Installation
 
 Use the Codex plugin scaffold and the default personal marketplace at `~/.agents/plugins/marketplace.json`. Validate the plugin before installation. Because this writes outside the project workspace, Codex requests explicit filesystem approval before scaffolding or marketplace registration. After installation, the user refreshes or restarts Codex and invokes the plugin by asking to preview a Markdown file.
-
