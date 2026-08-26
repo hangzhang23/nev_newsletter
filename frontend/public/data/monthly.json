@@ -187,7 +187,7 @@
   },
   {
     "month": "2026-07",
-    "total": 23,
+    "total": 22,
     "priceBands": [
       {
         "band": "15-20万",
@@ -199,7 +199,7 @@
       },
       {
         "band": "10-15万",
-        "count": 7
+        "count": 6
       },
       {
         "band": "30万以上",
@@ -213,7 +213,7 @@
     "powertrains": [
       {
         "type": "纯电",
-        "count": 9
+        "count": 8
       },
       {
         "type": "增程",
@@ -257,7 +257,7 @@
   },
   {
     "month": "2026-08",
-    "total": 26,
+    "total": 33,
     "priceBands": [
       {
         "band": "15-20万",
@@ -265,37 +265,37 @@
       },
       {
         "band": "30万以上",
-        "count": 5
+        "count": 4
       },
       {
         "band": "20-30万",
-        "count": 6
+        "count": 10
       },
       {
         "band": "10-15万",
-        "count": 6
+        "count": 8
       },
       {
         "band": "待公布",
-        "count": 2
+        "count": 3
       },
       {
         "band": "10万内",
-        "count": 3
+        "count": 4
       }
     ],
     "powertrains": [
       {
         "type": "纯电",
-        "count": 11
+        "count": 15
       },
       {
         "type": "插混",
-        "count": 8
+        "count": 10
       },
       {
         "type": "增程",
-        "count": 6
+        "count": 7
       },
       {
         "type": "燃油",
@@ -305,11 +305,11 @@
     "topBrands": [
       {
         "brand": "比亚迪",
-        "count": 4
+        "count": 6
       },
       {
         "brand": "鸿蒙智行",
-        "count": 3
+        "count": 5
       },
       {
         "brand": "红旗",
