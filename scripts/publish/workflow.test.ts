@@ -6,6 +6,7 @@ const productionPath = path.resolve(process.cwd(), '../.github/workflows/weekly-
 const validationPath = path.resolve(process.cwd(), '../.github/workflows/pr-validation.yml');
 const production = fs.readFileSync(productionPath, 'utf8');
 const validation = fs.readFileSync(validationPath, 'utf8');
+const prerender = fs.readFileSync(path.resolve(process.cwd(), 'prerender/index.ts'), 'utf8');
 
 describe('weekly data workflow', () => {
   it('runs for main data pushes with serialized execution', () => {
@@ -13,6 +14,16 @@ describe('weekly data workflow', () => {
     expect(production).toContain('branches: [main]');
     expect(production).toContain('- "data/**"');
     expect(production).toContain('cancel-in-progress: false');
+  });
+
+  it('uses repository-absolute paths and retriggers for pipeline fixes', () => {
+    const workspaceData = 'NEV_DATA_DIR: ${{ github.workspace }}/data';
+    expect(production).toContain('- ".github/workflows/weekly-update.yml"');
+    expect(production).toContain('- "scripts/**"');
+    expect(production.split(workspaceData)).toHaveLength(3);
+    const workspacePublicData = 'NEV_PUBLIC_DATA_DIR: ${{ github.workspace }}/frontend/public/data';
+    expect(production.split(workspacePublicData)).toHaveLength(3);
+    expect(prerender).toContain('process.env.NEV_PUBLIC_DATA_DIR');
   });
 
   it('tests and validates freshness before snapshot commit', () => {

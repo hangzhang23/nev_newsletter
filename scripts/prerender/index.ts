@@ -2,11 +2,13 @@
 // 每周自动化执行：npm run prerender（须先 npm run ingest）
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import 'dotenv/config';
 import { aggregateBrands, aggregateMonthly, aggregateTrend } from './aggregate';
 import type { Brand, Vehicle, WeekMeta } from '../shared/types';
 
-const OUT_DIR = path.resolve(process.cwd(), 'frontend/public/data');
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const OUT_DIR = path.resolve(process.env.NEV_PUBLIC_DATA_DIR || path.join(repoRoot, 'frontend/public/data'));
 
 interface VehicleRow {
   name: string;
