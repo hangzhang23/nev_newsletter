@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/weekly-update.yml"
       - "scripts/**"
+      - "supabase/migrations/**"
       - "data/**"
   schedule:
     # Sunday 00:30 UTC / Beijing 08:30. Compensation for transient push or platform failures.
