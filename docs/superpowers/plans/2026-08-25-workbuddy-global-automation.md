@@ -134,4 +134,3 @@
 - [ ] Invoke `superpowers:requesting-code-review` for the completed change.
 - [ ] Invoke `superpowers:finishing-a-development-branch` and present merge/push choices.
 - [ ] Do not push, trigger GitHub Actions, write Supabase, or deploy Vercel without explicit authorization at the finishing step.
-
