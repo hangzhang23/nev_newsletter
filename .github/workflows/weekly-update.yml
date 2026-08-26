@@ -6,6 +6,8 @@ on:
   push:
     branches: [main]
     paths:
+      - ".github/workflows/weekly-update.yml"
+      - "scripts/**"
       - "data/**"
   schedule:
     # Sunday 00:30 UTC / Beijing 08:30. Compensation for transient push or platform failures.
@@ -67,19 +69,20 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          NEV_DATA_DIR: data
+          NEV_DATA_DIR: ${{ github.workspace }}/data
 
       - name: Prerender static JSON
         run: npm run prerender
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NEV_PUBLIC_DATA_DIR: ${{ github.workspace }}/frontend/public/data
 
       - name: Verify snapshot freshness
         run: npm run validate:snapshot
         env:
-          NEV_DATA_DIR: data
-          NEV_PUBLIC_DATA_DIR: frontend/public/data
+          NEV_DATA_DIR: ${{ github.workspace }}/data
+          NEV_PUBLIC_DATA_DIR: ${{ github.workspace }}/frontend/public/data
 
       - name: Commit and push generated JSON
         run: |
