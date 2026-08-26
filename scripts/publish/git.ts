@@ -11,26 +11,48 @@ export interface PublishOptions {
   attempts?: number;
 }
 
+export interface PublishHooks {
+  beforePush?: (context: { cloneDir: string; attempt: number }) => void;
+}
+
 export interface PublishResult {
   status: 'pushed' | 'unchanged';
   period: string;
 }
 
-function git(args: string[], cwd?: string, allowFailure = false): string {
-  const result = spawnSync('git', args, { cwd, encoding: 'utf8' });
-  if (result.error) throw result.error;
-  if (result.status !== 0 && !allowFailure) {
-    throw new Error(`git ${args[0]} 失败: ${(result.stderr || result.stdout).trim()}`);
-  }
-  return `${result.stdout || ''}${result.stderr || ''}`;
+interface GitResult {
+  status: number;
+  output: string;
 }
 
-function publishOnce(options: Required<PublishOptions>): PublishResult {
+function gitResult(args: string[], cwd?: string): GitResult {
+  const result = spawnSync('git', args, { cwd, encoding: 'utf8' });
+  if (result.error) throw result.error;
+  return {
+    status: result.status ?? 1,
+    output: `${result.stdout || ''}${result.stderr || ''}`,
+  };
+}
+
+function git(args: string[], cwd?: string): string {
+  const result = gitResult(args, cwd);
+  if (result.status !== 0) {
+    throw new Error(`git ${args[0]} 失败: ${result.output.trim()}`);
+  }
+  return result.output;
+}
+
+function publishOnce(
+  options: Required<PublishOptions>,
+  hooks: PublishHooks,
+  attempt: number,
+): PublishResult {
   const selection = selectDataFiles(options.sourceDir);
   const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'nev-publish-'));
   const cloneDir = path.join(tempRoot, 'repo');
   try {
     git(['clone', '--single-branch', '--branch', options.branch, options.remote, cloneDir]);
+    const baseHead = git(['rev-parse', 'HEAD'], cloneDir).trim();
     syncSelectedData(selection, path.join(cloneDir, 'data'));
     git(['add', '--', 'data'], cloneDir);
     const status = git(['status', '--porcelain', '--', 'data'], cloneDir);
@@ -38,18 +60,27 @@ function publishOnce(options: Required<PublishOptions>): PublishResult {
     git(['config', 'user.name', 'workbuddy-automation[bot]'], cloneDir);
     git(['config', 'user.email', 'workbuddy-automation@users.noreply.github.com'], cloneDir);
     git(['commit', '-m', `chore: add weekly data (${selection.latestPeriod})`], cloneDir);
-    const pushOutput = git(['push', 'origin', options.branch], cloneDir, true);
-    if (/rejected|non-fast-forward|fetch first/i.test(pushOutput)) throw new Error('NON_FAST_FORWARD');
+    hooks.beforePush?.({ cloneDir, attempt });
+
+    const push = gitResult(['push', 'origin', options.branch], cloneDir);
+    if (push.status !== 0) {
+      git(['fetch', 'origin', options.branch], cloneDir);
+      const remoteHead = git(['rev-parse', 'FETCH_HEAD'], cloneDir).trim();
+      const ancestry = gitResult(['merge-base', '--is-ancestor', baseHead, remoteHead], cloneDir);
+      if (remoteHead !== baseHead && ancestry.status === 0) throw new Error('REMOTE_ADVANCED');
+      throw new Error(`git push 失败: ${push.output.trim()}`);
+    }
+
     const head = git(['rev-parse', 'HEAD'], cloneDir).trim();
     const remoteHead = git(['ls-remote', 'origin', `refs/heads/${options.branch}`], cloneDir).split(/\s/)[0];
-    if (!remoteHead || head !== remoteHead) throw new Error(`git push 失败: ${pushOutput.trim()}`);
+    if (!remoteHead || head !== remoteHead) throw new Error(`git push 后远端校验失败: ${push.output.trim()}`);
     return { status: 'pushed', period: selection.latestPeriod };
   } finally {
     fs.rmSync(tempRoot, { recursive: true, force: true });
   }
 }
 
-export function publishData(options: PublishOptions): PublishResult {
+export function publishData(options: PublishOptions, hooks: PublishHooks = {}): PublishResult {
   const normalized: Required<PublishOptions> = {
     ...options,
     branch: options.branch ?? 'main',
@@ -58,10 +89,10 @@ export function publishData(options: PublishOptions): PublishResult {
   let lastError: unknown;
   for (let attempt = 1; attempt <= normalized.attempts; attempt += 1) {
     try {
-      return publishOnce(normalized);
+      return publishOnce(normalized, hooks, attempt);
     } catch (error) {
       lastError = error;
-      if (!(error instanceof Error) || error.message !== 'NON_FAST_FORWARD') throw error;
+      if (!(error instanceof Error) || error.message !== 'REMOTE_ADVANCED') throw error;
     }
   }
   throw lastError;

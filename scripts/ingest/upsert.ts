@@ -4,28 +4,22 @@ export interface Dataset {
   brands: unknown[];
 }
 
-interface UpsertResult {
+interface ReplaceResult {
   error: unknown;
 }
 
-export interface UpsertClient {
-  from(table: string): {
-    upsert(rows: unknown[], options: { onConflict: string }): PromiseLike<UpsertResult>;
-  };
+export interface ReplaceClient {
+  rpc(
+    name: string,
+    args: Record<string, unknown>,
+  ): PromiseLike<ReplaceResult>;
 }
 
-async function checkedUpsert(
-  client: UpsertClient,
-  table: string,
-  rows: unknown[],
-  onConflict: string,
-): Promise<void> {
-  const { error } = await client.from(table).upsert(rows, { onConflict });
+export async function replaceDataset(client: ReplaceClient, dataset: Dataset): Promise<void> {
+  const { error } = await client.rpc('replace_nev_dataset', {
+    p_vehicles: dataset.vehicles,
+    p_weeks: dataset.weeks,
+    p_brands: dataset.brands,
+  });
   if (error) throw error;
-}
-
-export async function upsertDataset(client: UpsertClient, dataset: Dataset): Promise<void> {
-  await checkedUpsert(client, 'vehicles', dataset.vehicles, 'name');
-  await checkedUpsert(client, 'weeks', dataset.weeks, 'week');
-  await checkedUpsert(client, 'brands', dataset.brands, 'name');
 }

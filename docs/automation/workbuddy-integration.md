@@ -50,7 +50,7 @@ E:\projects\nev_web\scripts\publish-workbuddy.cmd
 - WorkBuddy 发布失败：产物保留在 `E:\workbuddy\space`，再次运行 `publish-workbuddy.cmd`。
 - GitHub Action 失败：修复 Secrets 或平台故障后手动运行 `Weekly Data Update`。
 - 数据竞争：当前运行会拒绝提交旧快照；后到的数据 push 会排队并重新生成。
-- Supabase 写入失败：任一表返回错误即终止，不提交静态快照。
+- Supabase 写入失败：单次事务 RPC 自动回滚三表，不留下混合版本，也不提交静态快照。
 - Vercel 构建失败：仓库数据仍可审计，Vercel 保留上一个成功部署。
 
 ## 手动验证

@@ -1,4 +1,4 @@
-// 入库脚本：读周报 CSV + brand_colors.json → 清洗归一 → upsert Supabase（vehicles / weeks / brands 三表）
+// 入库脚本：读周报 CSV + brand_colors.json → 清洗归一 → 事务替换 Supabase（vehicles / weeks / brands 三表）
 // 每周自动化执行：npm run ingest
 import fs from 'node:fs';
 import path from 'node:path';
@@ -7,7 +7,7 @@ import { csvToRecords } from '../shared/csv';
 import { buildBrandColorMap, rowToVehicle } from './normalize';
 import { weekOfFilename } from '../shared/weeks';
 import type { BrandColorsDoc, Vehicle, WeekMeta } from '../shared/types';
-import { upsertDataset, type UpsertClient } from './upsert';
+import { replaceDataset, type ReplaceClient } from './upsert';
 
 const DATA_DIR = process.env.NEV_DATA_DIR || 'e:/workbuddy/space';
 
@@ -62,15 +62,15 @@ async function main(): Promise<void> {
     return { name, color: bc.color, is_primary: bc.isPrimary, frequency };
   });
 
-  // upsert 三表（幂等）；任一写入失败立即中止，避免发布部分更新的快照。
-  await upsertDataset(supabase as unknown as UpsertClient, {
+  // 单次 RPC 在一个数据库事务中替换三表；失败时 PostgreSQL 自动回滚。
+  await replaceDataset(supabase as unknown as ReplaceClient, {
     vehicles: [...vehicles.values()],
     weeks: weekMetas.map((w) => ({ week: w.week, start_date: w.start, end_date: w.end })),
     brands,
   });
 
   console.log(
-    `已 upsert：vehicles ${vehicles.size} 款 / weeks ${weekMetas.length} 周 / brands ${brands.length} 个`,
+    `已原子替换：vehicles ${vehicles.size} 款 / weeks ${weekMetas.length} 周 / brands ${brands.length} 个`,
   );
 }
 
