@@ -1,7 +1,9 @@
 @echo off
 setlocal
-set "REPO_ROOT=%~dp0.."
-if not defined NEV_DATA_DIR set "NEV_DATA_DIR=E:\workbuddy\space"
-cd /d "%REPO_ROOT%" || exit /b 1
-call npm run publish:data
+set "STABLE_LAUNCHER=E:\workbuddy\space\.workbuddy\bin\publish-nev.cmd"
+if exist "%STABLE_LAUNCHER%" (
+  call "%STABLE_LAUNCHER%"
+  exit /b %ERRORLEVEL%
+)
+powershell.exe -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Bypass -File "%~dp0workbuddy-publisher.ps1" -RequestPublication
 exit /b %ERRORLEVEL%
