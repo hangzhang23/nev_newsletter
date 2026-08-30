@@ -24,8 +24,20 @@
     "frequency": 5
   },
   {
+    "name": "一汽-大众",
+    "color": "#64748B",
+    "isPrimary": true,
+    "frequency": 4
+  },
+  {
     "name": "五菱",
     "color": "#EAB308",
+    "isPrimary": true,
+    "frequency": 4
+  },
+  {
+    "name": "奇瑞风云",
+    "color": "#4F46E5",
     "isPrimary": true,
     "frequency": 4
   },
@@ -36,27 +48,27 @@
     "frequency": 4
   },
   {
-    "name": "一汽-大众",
-    "color": "#64748B",
-    "isPrimary": true,
-    "frequency": 3
-  },
-  {
     "name": "吉利银河",
     "color": "#22C55E",
     "isPrimary": true,
     "frequency": 3
   },
   {
-    "name": "奇瑞风云",
-    "color": "#4F46E5",
-    "isPrimary": true,
+    "name": "智己",
+    "color": "#525252",
+    "isPrimary": false,
     "frequency": 3
   },
   {
     "name": "极氪",
     "color": "#14B8A6",
     "isPrimary": true,
+    "frequency": 3
+  },
+  {
+    "name": "极狐",
+    "color": "#525252",
+    "isPrimary": false,
     "frequency": 3
   },
   {
@@ -79,6 +91,12 @@
   },
   {
     "name": "别克",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
+    "name": "北京越野",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -126,18 +144,6 @@
     "frequency": 2
   },
   {
-    "name": "智己",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 2
-  },
-  {
-    "name": "极狐",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 2
-  },
-  {
     "name": "红旗",
     "color": "#525252",
     "isPrimary": false,
@@ -154,6 +160,12 @@
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
+  },
+  {
+    "name": "一汽丰田",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
   },
   {
     "name": "一汽悦意",
@@ -192,12 +204,6 @@
     "frequency": 1
   },
   {
-    "name": "北京越野",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
     "name": "名爵",
     "color": "#525252",
     "isPrimary": false,
@@ -229,6 +235,12 @@
   },
   {
     "name": "奔驰",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "捷途",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1

@@ -534,5 +534,41 @@
         "count": 1
       }
     ]
+  },
+  {
+    "week": "W35",
+    "start": "2026-08-23",
+    "end": "2026-08-29",
+    "total": 7,
+    "byBrand": [
+      {
+        "brand": "北京越野",
+        "count": 1
+      },
+      {
+        "brand": "一汽丰田",
+        "count": 1
+      },
+      {
+        "brand": "奇瑞风云",
+        "count": 1
+      },
+      {
+        "brand": "捷途",
+        "count": 1
+      },
+      {
+        "brand": "极狐",
+        "count": 1
+      },
+      {
+        "brand": "一汽-大众",
+        "count": 1
+      },
+      {
+        "brand": "智己",
+        "count": 1
+      }
+    ]
   }
 ]

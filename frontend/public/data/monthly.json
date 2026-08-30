@@ -257,11 +257,11 @@
   },
   {
     "month": "2026-08",
-    "total": 33,
+    "total": 40,
     "priceBands": [
       {
         "band": "15-20万",
-        "count": 4
+        "count": 5
       },
       {
         "band": "30万以上",
@@ -269,11 +269,11 @@
       },
       {
         "band": "20-30万",
-        "count": 10
+        "count": 11
       },
       {
         "band": "10-15万",
-        "count": 8
+        "count": 12
       },
       {
         "band": "待公布",
@@ -281,21 +281,21 @@
       },
       {
         "band": "10万内",
-        "count": 4
+        "count": 5
       }
     ],
     "powertrains": [
       {
         "type": "纯电",
-        "count": 15
+        "count": 19
       },
       {
         "type": "插混",
-        "count": 10
+        "count": 11
       },
       {
         "type": "增程",
-        "count": 7
+        "count": 9
       },
       {
         "type": "燃油",
