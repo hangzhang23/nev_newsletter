@@ -3,7 +3,7 @@
     "name": "比亚迪",
     "color": "#EF4444",
     "isPrimary": true,
-    "frequency": 15
+    "frequency": 16
   },
   {
     "name": "鸿蒙智行",
@@ -42,6 +42,12 @@
     "frequency": 4
   },
   {
+    "name": "理想",
+    "color": "#A3E635",
+    "isPrimary": true,
+    "frequency": 4
+  },
+  {
     "name": "魏牌",
     "color": "#B45309",
     "isPrimary": true,
@@ -51,6 +57,12 @@
     "name": "吉利银河",
     "color": "#22C55E",
     "isPrimary": true,
+    "frequency": 3
+  },
+  {
+    "name": "岚图",
+    "color": "#525252",
+    "isPrimary": false,
     "frequency": 3
   },
   {
@@ -69,12 +81,6 @@
     "name": "极狐",
     "color": "#525252",
     "isPrimary": false,
-    "frequency": 3
-  },
-  {
-    "name": "理想",
-    "color": "#A3E635",
-    "isPrimary": true,
     "frequency": 3
   },
   {
@@ -114,6 +120,12 @@
     "frequency": 2
   },
   {
+    "name": "奇瑞捷豹路虎",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
     "name": "奕派",
     "color": "#525252",
     "isPrimary": false,
@@ -133,12 +145,6 @@
   },
   {
     "name": "小米",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 2
-  },
-  {
-    "name": "岚图",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -228,13 +234,19 @@
     "frequency": 1
   },
   {
-    "name": "奇瑞捷豹路虎",
+    "name": "奔驰",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
   },
   {
-    "name": "奔驰",
+    "name": "广汽",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "广汽+华为",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -276,6 +288,12 @@
     "frequency": 1
   },
   {
+    "name": "莲花Lotus",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
     "name": "萤火虫",
     "color": "#525252",
     "isPrimary": false,
@@ -283,6 +301,12 @@
   },
   {
     "name": "长城",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "长安",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1

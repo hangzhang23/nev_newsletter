@@ -257,7 +257,7 @@
   },
   {
     "month": "2026-08",
-    "total": 40,
+    "total": 41,
     "priceBands": [
       {
         "band": "15-20万",
@@ -277,7 +277,7 @@
       },
       {
         "band": "待公布",
-        "count": 3
+        "count": 4
       },
       {
         "band": "10万内",
@@ -287,7 +287,7 @@
     "powertrains": [
       {
         "type": "纯电",
-        "count": 19
+        "count": 20
       },
       {
         "type": "插混",
@@ -321,6 +321,52 @@
       },
       {
         "brand": "腾势",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "month": "2026-09",
+    "total": 7,
+    "priceBands": [
+      {
+        "band": "待公布",
+        "count": 7
+      }
+    ],
+    "powertrains": [
+      {
+        "type": "增程",
+        "count": 4
+      },
+      {
+        "type": "插混",
+        "count": 2
+      },
+      {
+        "type": "纯电",
+        "count": 1
+      }
+    ],
+    "topBrands": [
+      {
+        "brand": "广汽",
+        "count": 1
+      },
+      {
+        "brand": "理想",
+        "count": 1
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "奇瑞捷豹路虎",
+        "count": 1
+      },
+      {
+        "brand": "长安",
         "count": 1
       }
     ]

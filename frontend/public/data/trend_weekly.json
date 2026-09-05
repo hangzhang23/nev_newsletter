@@ -570,5 +570,45 @@
         "count": 1
       }
     ]
+  },
+  {
+    "week": "W36",
+    "start": "2026-08-30",
+    "end": "2026-09-05",
+    "total": 8,
+    "byBrand": [
+      {
+        "brand": "莲花Lotus",
+        "count": 1
+      },
+      {
+        "brand": "广汽",
+        "count": 1
+      },
+      {
+        "brand": "理想",
+        "count": 1
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "奇瑞捷豹路虎",
+        "count": 1
+      },
+      {
+        "brand": "长安",
+        "count": 1
+      },
+      {
+        "brand": "广汽+华为",
+        "count": 1
+      },
+      {
+        "brand": "岚图",
+        "count": 1
+      }
+    ]
   }
 ]
