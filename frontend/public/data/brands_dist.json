@@ -42,6 +42,18 @@
     "frequency": 4
   },
   {
+    "name": "小米汽车",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 4
+  },
+  {
+    "name": "智己",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 4
+  },
+  {
     "name": "理想",
     "color": "#A3E635",
     "isPrimary": true,
@@ -61,12 +73,6 @@
   },
   {
     "name": "岚图",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 3
-  },
-  {
-    "name": "智己",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 3
@@ -96,6 +102,12 @@
     "frequency": 2
   },
   {
+    "name": "上汽大通",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
     "name": "别克",
     "color": "#525252",
     "isPrimary": false,
@@ -121,6 +133,12 @@
   },
   {
     "name": "奇瑞捷豹路虎",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
+    "name": "奇瑞捷途",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -210,6 +228,12 @@
     "frequency": 1
   },
   {
+    "name": "凯迪拉克",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
     "name": "名爵",
     "color": "#525252",
     "isPrimary": false,
@@ -223,6 +247,12 @@
   },
   {
     "name": "坦克",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "大众安徽",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -247,6 +277,12 @@
   },
   {
     "name": "广汽+华为",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "捷尼赛思",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1

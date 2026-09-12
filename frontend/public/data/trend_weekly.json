@@ -295,12 +295,8 @@
     "week": "W28",
     "start": "2026-07-05",
     "end": "2026-07-11",
-    "total": 4,
+    "total": 3,
     "byBrand": [
-      {
-        "brand": "吉利银河",
-        "count": 1
-      },
       {
         "brand": "坦克",
         "count": 1
@@ -607,6 +603,46 @@
       },
       {
         "brand": "岚图",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W37",
+    "start": "2026-09-07",
+    "end": "2026-09-13",
+    "total": 13,
+    "byBrand": [
+      {
+        "brand": "小米汽车",
+        "count": 4
+      },
+      {
+        "brand": "奇瑞捷途",
+        "count": 2
+      },
+      {
+        "brand": "上汽大通",
+        "count": 2
+      },
+      {
+        "brand": "凯迪拉克",
+        "count": 1
+      },
+      {
+        "brand": "捷尼赛思",
+        "count": 1
+      },
+      {
+        "brand": "吉利银河",
+        "count": 1
+      },
+      {
+        "brand": "智己",
+        "count": 1
+      },
+      {
+        "brand": "大众安徽",
         "count": 1
       }
     ]

@@ -187,11 +187,11 @@
   },
   {
     "month": "2026-07",
-    "total": 22,
+    "total": 21,
     "priceBands": [
       {
         "band": "15-20万",
-        "count": 5
+        "count": 4
       },
       {
         "band": "10万内",
@@ -213,7 +213,7 @@
     "powertrains": [
       {
         "type": "纯电",
-        "count": 8
+        "count": 7
       },
       {
         "type": "增程",
@@ -238,10 +238,6 @@
         "count": 3
       },
       {
-        "brand": "吉利银河",
-        "count": 2
-      },
-      {
         "brand": "五菱",
         "count": 2
       },
@@ -251,6 +247,10 @@
       },
       {
         "brand": "坦克",
+        "count": 1
+      },
+      {
+        "brand": "蔚来",
         "count": 1
       }
     ]
@@ -327,46 +327,58 @@
   },
   {
     "month": "2026-09",
-    "total": 7,
+    "total": 20,
     "priceBands": [
       {
         "band": "待公布",
-        "count": 7
+        "count": 9
+      },
+      {
+        "band": "20-30万",
+        "count": 8
+      },
+      {
+        "band": "10-15万",
+        "count": 3
       }
     ],
     "powertrains": [
       {
         "type": "增程",
-        "count": 4
-      },
-      {
-        "type": "插混",
-        "count": 2
+        "count": 9
       },
       {
         "type": "纯电",
-        "count": 1
+        "count": 6
+      },
+      {
+        "type": "插混",
+        "count": 3
+      },
+      {
+        "type": "燃油",
+        "count": 2
       }
     ],
     "topBrands": [
+      {
+        "brand": "小米汽车",
+        "count": 4
+      },
+      {
+        "brand": "奇瑞捷途",
+        "count": 2
+      },
+      {
+        "brand": "上汽大通",
+        "count": 2
+      },
       {
         "brand": "广汽",
         "count": 1
       },
       {
         "brand": "理想",
-        "count": 1
-      },
-      {
-        "brand": "比亚迪",
-        "count": 1
-      },
-      {
-        "brand": "奇瑞捷豹路虎",
-        "count": 1
-      },
-      {
-        "brand": "长安",
         "count": 1
       }
     ]
