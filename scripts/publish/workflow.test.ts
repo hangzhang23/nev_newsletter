@@ -4,8 +4,10 @@ import { describe, expect, it } from 'vitest';
 
 const productionPath = path.resolve(process.cwd(), '../.github/workflows/weekly-update.yml');
 const validationPath = path.resolve(process.cwd(), '../.github/workflows/pr-validation.yml');
+const guardPath = path.resolve(process.cwd(), '../.github/workflows/supabase-midweek-guard.yml');
 const production = fs.readFileSync(productionPath, 'utf8');
 const validation = fs.readFileSync(validationPath, 'utf8');
+const guard = fs.readFileSync(guardPath, 'utf8');
 const prerender = fs.readFileSync(path.resolve(process.cwd(), 'prerender/index.ts'), 'utf8');
 
 describe('weekly data workflow', () => {
@@ -57,5 +59,32 @@ describe('weekly data workflow', () => {
   it('requires committed lockfiles for deterministic installs', () => {
     expect(fs.existsSync(path.resolve(process.cwd(), 'package-lock.json'))).toBe(true);
     expect(fs.existsSync(path.resolve(process.cwd(), '../frontend/package-lock.json'))).toBe(true);
+  });
+
+  it('checks Supabase availability before installing weekly dependencies', () => {
+    const availabilityIndex = production.indexOf('name: Ensure Supabase is active');
+    const installIndex = production.indexOf('name: Install scripts dependencies');
+    expect(availabilityIndex).toBeGreaterThan(0);
+    expect(installIndex).toBeGreaterThan(availabilityIndex);
+    expect(production).toContain('SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}');
+    expect(production).toContain('node scripts/ops/ensure-supabase-active.mjs');
+  });
+});
+
+describe('Supabase midweek guard workflow', () => {
+  it('runs Wednesday morning in Beijing and supports manual recovery', () => {
+    expect(guard).toContain('cron: "30 0 * * 3"');
+    expect(guard).toContain('workflow_dispatch: {}');
+  });
+
+  it('has read-only repository permissions and a bounded recovery time', () => {
+    expect(guard).toContain('contents: read');
+    expect(guard).toContain('timeout-minutes: 20');
+    expect(guard).toContain('node scripts/ops/ensure-supabase-active.mjs');
+    expect(guard).toContain('SUPABASE_URL: ${{ secrets.SUPABASE_URL }}');
+    expect(guard).toContain(
+      'SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}',
+    );
+    expect(guard).toContain('SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}');
   });
 });
