@@ -257,11 +257,11 @@
   },
   {
     "month": "2026-08",
-    "total": 41,
+    "total": 39,
     "priceBands": [
       {
         "band": "15-20万",
-        "count": 5
+        "count": 4
       },
       {
         "band": "30万以上",
@@ -273,7 +273,7 @@
       },
       {
         "band": "10-15万",
-        "count": 12
+        "count": 11
       },
       {
         "band": "待公布",
@@ -291,11 +291,11 @@
       },
       {
         "type": "插混",
-        "count": 11
+        "count": 10
       },
       {
         "type": "增程",
-        "count": 9
+        "count": 8
       },
       {
         "type": "燃油",
@@ -312,12 +312,12 @@
         "count": 5
       },
       {
-        "brand": "红旗",
+        "brand": "别克",
         "count": 2
       },
       {
-        "brand": "别克",
-        "count": 2
+        "brand": "红旗",
+        "count": 1
       },
       {
         "brand": "腾势",
@@ -327,7 +327,7 @@
   },
   {
     "month": "2026-09",
-    "total": 20,
+    "total": 28,
     "priceBands": [
       {
         "band": "待公布",
@@ -335,25 +335,33 @@
       },
       {
         "band": "20-30万",
-        "count": 8
+        "count": 10
       },
       {
         "band": "10-15万",
-        "count": 3
+        "count": 5
+      },
+      {
+        "band": "15-20万",
+        "count": 2
+      },
+      {
+        "band": "30万以上",
+        "count": 2
       }
     ],
     "powertrains": [
       {
-        "type": "增程",
-        "count": 9
+        "type": "纯电",
+        "count": 10
       },
       {
-        "type": "纯电",
-        "count": 6
+        "type": "增程",
+        "count": 10
       },
       {
         "type": "插混",
-        "count": 3
+        "count": 6
       },
       {
         "type": "燃油",
@@ -366,6 +374,10 @@
         "count": 4
       },
       {
+        "brand": "理想",
+        "count": 2
+      },
+      {
         "brand": "奇瑞捷途",
         "count": 2
       },
@@ -374,12 +386,8 @@
         "count": 2
       },
       {
-        "brand": "广汽",
-        "count": 1
-      },
-      {
-        "brand": "理想",
-        "count": 1
+        "brand": "方程豹",
+        "count": 2
       }
     ]
   }

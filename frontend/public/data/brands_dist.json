@@ -24,6 +24,12 @@
     "frequency": 5
   },
   {
+    "name": "理想",
+    "color": "#A3E635",
+    "isPrimary": true,
+    "frequency": 5
+  },
+  {
     "name": "一汽-大众",
     "color": "#64748B",
     "isPrimary": true,
@@ -54,16 +60,16 @@
     "frequency": 4
   },
   {
-    "name": "理想",
-    "color": "#A3E635",
-    "isPrimary": true,
-    "frequency": 4
-  },
-  {
     "name": "魏牌",
     "color": "#B45309",
     "isPrimary": true,
     "frequency": 4
+  },
+  {
+    "name": "吉利",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 3
   },
   {
     "name": "吉利银河",
@@ -85,6 +91,12 @@
   },
   {
     "name": "极狐",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 3
+  },
+  {
+    "name": "腾势",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 3
@@ -120,12 +132,6 @@
     "frequency": 2
   },
   {
-    "name": "吉利",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 2
-  },
-  {
     "name": "埃安",
     "color": "#525252",
     "isPrimary": false,
@@ -139,6 +145,12 @@
   },
   {
     "name": "奇瑞捷途",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
+    "name": "奔驰",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -168,13 +180,13 @@
     "frequency": 2
   },
   {
-    "name": "红旗",
+    "name": "方程豹",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
   },
   {
-    "name": "腾势",
+    "name": "红旗",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -259,12 +271,6 @@
   },
   {
     "name": "奇瑞",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
-    "name": "奔驰",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
