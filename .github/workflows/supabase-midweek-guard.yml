@@ -1,0 +1,35 @@
+name: Supabase Midweek Guard
+
+on:
+  schedule:
+    # Wednesday 00:30 UTC / Beijing 08:30. Restore early enough for Saturday publishing.
+    - cron: "30 0 * * 3"
+  workflow_dispatch: {}
+
+concurrency:
+  group: weekly-data-update-main
+  cancel-in-progress: false
+
+jobs:
+  ensure-active:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Ensure Supabase is active
+        run: node scripts/ops/ensure-supabase-active.mjs
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}

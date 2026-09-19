@@ -48,13 +48,25 @@ E:\workbuddy\space\.workbuddy\bin\publish-nev.cmd
 
 - `SUPABASE_URL`
 - `SUPABASE_SERVICE_ROLE_KEY`
+- `SUPABASE_ACCESS_TOKEN`
 
 工作流权限需要允许 GitHub Actions 写入仓库内容。前端不使用 Supabase key。
+
+`SUPABASE_ACCESS_TOKEN` 用于 Supabase Management API 的项目状态检查和自动恢复。优先创建仅限当前项目、具有 `Project Settings: Read-write` 权限的 Scoped Personal Access Token；若账户尚未开放 Scoped Token，只能使用权限范围更大的 Classic Token，并应严格限制其存放位置。
+
+`Supabase Midweek Guard` 每周三北京时间 08:30 自动执行，也支持从 GitHub Actions 手动运行。它会：
+
+1. 查询 Supabase 项目状态。
+2. 在项目为 `INACTIVE` 时请求恢复，并最长等待 15 分钟至 `ACTIVE_HEALTHY`。
+3. 执行三次轻量只读查询，验证数据库实际可达并产生用户数据库活动。
+
+`Weekly Data Update` 在每次周六发布和周日补偿运行时也会执行相同前置检查，因此周中保活未能阻止暂停时，正式发布仍可自动恢复后继续。
 
 ## 恢复与观察
 
 - WorkBuddy 发布失败：本地产物保留，计划任务每 15 分钟自动重试；也可手动运行固定入口。
 - GitHub Action 失败：修复 Secrets 或平台故障后手动运行 `Weekly Data Update`。
+- Supabase 自动恢复失败：检查 `SUPABASE_ACCESS_TOKEN` 是否有效且具有项目设置读写权限，然后手动运行 `Supabase Midweek Guard`。
 - Supabase 写入失败：单次事务 RPC 自动回滚三表，不提交静态快照。
 - Vercel 构建失败：仓库数据仍可审计，Vercel 保留上一个成功部署。
 
