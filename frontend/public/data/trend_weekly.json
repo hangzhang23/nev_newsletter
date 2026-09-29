@@ -407,7 +407,7 @@
     "week": "W32",
     "start": "2026-08-02",
     "end": "2026-08-08",
-    "total": 11,
+    "total": 10,
     "byBrand": [
       {
         "brand": "鸿蒙智行",
@@ -415,10 +415,6 @@
       },
       {
         "brand": "红旗",
-        "count": 1
-      },
-      {
-        "brand": "腾势",
         "count": 1
       },
       {
@@ -563,14 +559,10 @@
     "week": "W36",
     "start": "2026-08-30",
     "end": "2026-09-05",
-    "total": 8,
+    "total": 4,
     "byBrand": [
       {
         "brand": "莲花Lotus",
-        "count": 1
-      },
-      {
-        "brand": "广汽",
         "count": 1
       },
       {
@@ -583,18 +575,6 @@
       },
       {
         "brand": "奇瑞捷豹路虎",
-        "count": 1
-      },
-      {
-        "brand": "长安",
-        "count": 1
-      },
-      {
-        "brand": "广汽+华为",
-        "count": 1
-      },
-      {
-        "brand": "岚图",
         "count": 1
       }
     ]
@@ -671,6 +651,78 @@
       },
       {
         "brand": "理想",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W39",
+    "start": "2026-09-21",
+    "end": "2026-09-27",
+    "total": 17,
+    "byBrand": [
+      {
+        "brand": "红旗",
+        "count": 2
+      },
+      {
+        "brand": "哈弗",
+        "count": 1
+      },
+      {
+        "brand": "奇瑞",
+        "count": 1
+      },
+      {
+        "brand": "岚图",
+        "count": 1
+      },
+      {
+        "brand": "广汽传祺",
+        "count": 1
+      },
+      {
+        "brand": "东风日产",
+        "count": 1
+      },
+      {
+        "brand": "智己",
+        "count": 1
+      },
+      {
+        "brand": "广汽启境",
+        "count": 1
+      },
+      {
+        "brand": "宾利",
+        "count": 1
+      },
+      {
+        "brand": "吉利银河",
+        "count": 1
+      },
+      {
+        "brand": "腾势",
+        "count": 1
+      },
+      {
+        "brand": "长安启源",
+        "count": 1
+      },
+      {
+        "brand": "魏牌",
+        "count": 1
+      },
+      {
+        "brand": "大众安徽",
+        "count": 1
+      },
+      {
+        "brand": "吉利",
+        "count": 1
+      },
+      {
+        "brand": "长安马自达",
         "count": 1
       }
     ]

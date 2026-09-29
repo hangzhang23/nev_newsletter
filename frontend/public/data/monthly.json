@@ -257,7 +257,7 @@
   },
   {
     "month": "2026-08",
-    "total": 39,
+    "total": 38,
     "priceBands": [
       {
         "band": "15-20万",
@@ -265,7 +265,7 @@
       },
       {
         "band": "30万以上",
-        "count": 4
+        "count": 3
       },
       {
         "band": "20-30万",
@@ -287,7 +287,7 @@
     "powertrains": [
       {
         "type": "纯电",
-        "count": 20
+        "count": 19
       },
       {
         "type": "插混",
@@ -320,58 +320,66 @@
         "count": 1
       },
       {
-        "brand": "腾势",
+        "brand": "长城",
         "count": 1
       }
     ]
   },
   {
     "month": "2026-09",
-    "total": 28,
+    "total": 41,
     "priceBands": [
       {
         "band": "待公布",
-        "count": 9
+        "count": 13
       },
       {
         "band": "20-30万",
-        "count": 10
+        "count": 12
       },
       {
         "band": "10-15万",
-        "count": 5
+        "count": 6
       },
       {
         "band": "15-20万",
-        "count": 2
+        "count": 7
       },
       {
         "band": "30万以上",
-        "count": 2
+        "count": 3
       }
     ],
     "powertrains": [
       {
         "type": "纯电",
+        "count": 20
+      },
+      {
+        "type": "插混",
         "count": 10
       },
       {
         "type": "增程",
-        "count": 10
-      },
-      {
-        "type": "插混",
-        "count": 6
+        "count": 8
       },
       {
         "type": "燃油",
         "count": 2
+      },
+      {
+        "type": "未知",
+        "count": 1
       }
     ],
     "topBrands": [
       {
         "brand": "小米汽车",
         "count": 4
+      },
+      {
+        "brand": "红旗",
+        "count": 3
       },
       {
         "brand": "理想",
@@ -382,11 +390,7 @@
         "count": 2
       },
       {
-        "brand": "上汽大通",
-        "count": 2
-      },
-      {
-        "brand": "方程豹",
+        "brand": "吉利银河",
         "count": 2
       }
     ]
