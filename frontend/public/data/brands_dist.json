@@ -9,7 +9,7 @@
     "name": "鸿蒙智行",
     "color": "#A855F7",
     "isPrimary": true,
-    "frequency": 13
+    "frequency": 14
   },
   {
     "name": "零跑",
@@ -126,6 +126,12 @@
     "frequency": 2
   },
   {
+    "name": "上汽大众",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
     "name": "上汽大通",
     "color": "#525252",
     "isPrimary": false,
@@ -210,6 +216,36 @@
     "frequency": 2
   },
   {
+    "name": "深蓝",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
+    "name": "猛士",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
+    "name": "长城",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
+    "name": "领克",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
+    "name": "iCAR",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
     "name": "一汽丰田",
     "color": "#525252",
     "isPrimary": false,
@@ -223,12 +259,6 @@
   },
   {
     "name": "上汽名爵",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
-    "name": "上汽大众",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -259,6 +289,12 @@
   },
   {
     "name": "凯迪拉克",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "北京现代",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -312,7 +348,19 @@
     "frequency": 1
   },
   {
+    "name": "捷达",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
     "name": "捷途",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "捷途纵横",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -324,19 +372,19 @@
     "frequency": 1
   },
   {
+    "name": "欧拉",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
     "name": "沃尔沃",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
   },
   {
-    "name": "深蓝",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
-    "name": "猛士",
+    "name": "特斯拉",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -360,12 +408,6 @@
     "frequency": 1
   },
   {
-    "name": "长城",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
     "name": "长安启源",
     "color": "#525252",
     "isPrimary": false,
@@ -373,12 +415,6 @@
   },
   {
     "name": "阿维塔",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
-    "name": "领克",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1

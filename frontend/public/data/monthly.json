@@ -257,7 +257,7 @@
   },
   {
     "month": "2026-08",
-    "total": 38,
+    "total": 36,
     "priceBands": [
       {
         "band": "15-20万",
@@ -269,7 +269,7 @@
       },
       {
         "band": "20-30万",
-        "count": 11
+        "count": 10
       },
       {
         "band": "10-15万",
@@ -277,7 +277,7 @@
       },
       {
         "band": "待公布",
-        "count": 4
+        "count": 3
       },
       {
         "band": "10万内",
@@ -287,7 +287,7 @@
     "powertrains": [
       {
         "type": "纯电",
-        "count": 19
+        "count": 18
       },
       {
         "type": "插混",
@@ -295,7 +295,7 @@
       },
       {
         "type": "增程",
-        "count": 8
+        "count": 7
       },
       {
         "type": "燃油",
@@ -309,7 +309,7 @@
       },
       {
         "brand": "鸿蒙智行",
-        "count": 5
+        "count": 3
       },
       {
         "brand": "别克",
@@ -327,11 +327,11 @@
   },
   {
     "month": "2026-09",
-    "total": 41,
+    "total": 54,
     "priceBands": [
       {
         "band": "待公布",
-        "count": 13
+        "count": 26
       },
       {
         "band": "20-30万",
@@ -353,15 +353,15 @@
     "powertrains": [
       {
         "type": "纯电",
-        "count": 20
-      },
-      {
-        "type": "插混",
-        "count": 10
+        "count": 26
       },
       {
         "type": "增程",
-        "count": 8
+        "count": 13
+      },
+      {
+        "type": "插混",
+        "count": 12
       },
       {
         "type": "燃油",
@@ -382,16 +382,38 @@
         "count": 3
       },
       {
+        "brand": "鸿蒙智行",
+        "count": 3
+      },
+      {
         "brand": "理想",
         "count": 2
       },
       {
         "brand": "奇瑞捷途",
         "count": 2
-      },
+      }
+    ]
+  },
+  {
+    "month": "2026-10",
+    "total": 1,
+    "priceBands": [
       {
-        "brand": "吉利银河",
-        "count": 2
+        "band": "待公布",
+        "count": 1
+      }
+    ],
+    "powertrains": [
+      {
+        "type": "纯电",
+        "count": 1
+      }
+    ],
+    "topBrands": [
+      {
+        "brand": "特斯拉",
+        "count": 1
       }
     ]
   }

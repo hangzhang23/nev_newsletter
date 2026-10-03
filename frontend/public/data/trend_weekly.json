@@ -483,12 +483,8 @@
     "week": "W34",
     "start": "2026-08-16",
     "end": "2026-08-22",
-    "total": 12,
+    "total": 10,
     "byBrand": [
-      {
-        "brand": "鸿蒙智行",
-        "count": 3
-      },
       {
         "brand": "比亚迪",
         "count": 2
@@ -503,6 +499,10 @@
       },
       {
         "brand": "岚图",
+        "count": 1
+      },
+      {
+        "brand": "鸿蒙智行",
         "count": 1
       },
       {
@@ -723,6 +723,62 @@
       },
       {
         "brand": "长安马自达",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W40",
+    "start": "2026-09-28",
+    "end": "2026-10-03",
+    "total": 14,
+    "byBrand": [
+      {
+        "brand": "鸿蒙智行",
+        "count": 3
+      },
+      {
+        "brand": "上汽大众",
+        "count": 1
+      },
+      {
+        "brand": "捷达",
+        "count": 1
+      },
+      {
+        "brand": "深蓝",
+        "count": 1
+      },
+      {
+        "brand": "猛士",
+        "count": 1
+      },
+      {
+        "brand": "长城",
+        "count": 1
+      },
+      {
+        "brand": "领克",
+        "count": 1
+      },
+      {
+        "brand": "欧拉",
+        "count": 1
+      },
+      {
+        "brand": "捷途纵横",
+        "count": 1
+      },
+      {
+        "brand": "北京现代",
+        "count": 1
+      },
+      {
+        "brand": "iCAR",
+        "count": 1
+      },
+      {
+        "brand": "特斯拉",
         "count": 1
       }
     ]
