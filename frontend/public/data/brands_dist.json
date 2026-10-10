@@ -15,7 +15,13 @@
     "name": "零跑",
     "color": "#F97316",
     "isPrimary": true,
-    "frequency": 10
+    "frequency": 11
+  },
+  {
+    "name": "吉利银河",
+    "color": "#22C55E",
+    "isPrimary": true,
+    "frequency": 5
   },
   {
     "name": "小鹏",
@@ -60,12 +66,6 @@
     "frequency": 4
   },
   {
-    "name": "吉利银河",
-    "color": "#22C55E",
-    "isPrimary": true,
-    "frequency": 4
-  },
-  {
     "name": "奇瑞风云",
     "color": "#4F46E5",
     "isPrimary": true,
@@ -82,6 +82,18 @@
     "color": "#525252",
     "isPrimary": false,
     "frequency": 4
+  },
+  {
+    "name": "蔚来",
+    "color": "#0EA5E9",
+    "isPrimary": true,
+    "frequency": 4
+  },
+  {
+    "name": "宝马",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 3
   },
   {
     "name": "岚图",
@@ -102,15 +114,15 @@
     "frequency": 3
   },
   {
-    "name": "腾势",
+    "name": "深蓝",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 3
   },
   {
-    "name": "蔚来",
-    "color": "#0EA5E9",
-    "isPrimary": true,
+    "name": "腾势",
+    "color": "#525252",
+    "isPrimary": false,
     "frequency": 3
   },
   {
@@ -198,25 +210,19 @@
     "frequency": 2
   },
   {
-    "name": "宝马",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 2
-  },
-  {
     "name": "小米",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
   },
   {
-    "name": "方程豹",
+    "name": "捷途",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
   },
   {
-    "name": "深蓝",
+    "name": "方程豹",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -349,12 +355,6 @@
   },
   {
     "name": "捷达",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
-    "name": "捷途",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1

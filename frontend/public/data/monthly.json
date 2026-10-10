@@ -1,11 +1,11 @@
 [
   {
     "month": "2026-04",
-    "total": 26,
+    "total": 25,
     "priceBands": [
       {
         "band": "30万以上",
-        "count": 10
+        "count": 9
       },
       {
         "band": "20-30万",
@@ -31,7 +31,7 @@
       },
       {
         "type": "插混",
-        "count": 6
+        "count": 5
       }
     ],
     "topBrands": [
@@ -397,22 +397,46 @@
   },
   {
     "month": "2026-10",
-    "total": 1,
+    "total": 8,
     "priceBands": [
       {
         "band": "待公布",
-        "count": 1
+        "count": 8
       }
     ],
     "powertrains": [
       {
         "type": "纯电",
+        "count": 5
+      },
+      {
+        "type": "插混",
+        "count": 2
+      },
+      {
+        "type": "未知",
         "count": 1
       }
     ],
     "topBrands": [
       {
+        "brand": "吉利银河",
+        "count": 2
+      },
+      {
         "brand": "特斯拉",
+        "count": 1
+      },
+      {
+        "brand": "零跑",
+        "count": 1
+      },
+      {
+        "brand": "宝马",
+        "count": 1
+      },
+      {
+        "brand": "蔚来",
         "count": 1
       }
     ]

@@ -27,7 +27,7 @@
     "week": "W16",
     "start": "2026-04-19",
     "end": "2026-04-25",
-    "total": 14,
+    "total": 13,
     "byBrand": [
       {
         "brand": "鸿蒙智行",
@@ -40,10 +40,6 @@
       {
         "brand": "长安马自达",
         "count": 2
-      },
-      {
-        "brand": "吉利银河",
-        "count": 1
       },
       {
         "brand": "一汽-大众",
@@ -779,6 +775,38 @@
       },
       {
         "brand": "特斯拉",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W41",
+    "start": "2026-10-04",
+    "end": "2026-10-10",
+    "total": 7,
+    "byBrand": [
+      {
+        "brand": "吉利银河",
+        "count": 2
+      },
+      {
+        "brand": "零跑",
+        "count": 1
+      },
+      {
+        "brand": "宝马",
+        "count": 1
+      },
+      {
+        "brand": "蔚来",
+        "count": 1
+      },
+      {
+        "brand": "深蓝",
+        "count": 1
+      },
+      {
+        "brand": "捷途",
         "count": 1
       }
     ]
