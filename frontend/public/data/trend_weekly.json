@@ -810,5 +810,33 @@
         "count": 1
       }
     ]
+  },
+  {
+    "week": "W42",
+    "start": "2026-10-11",
+    "end": "2026-10-17",
+    "total": 5,
+    "byBrand": [
+      {
+        "brand": "五菱",
+        "count": 1
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "坦克",
+        "count": 1
+      },
+      {
+        "brand": "吉利",
+        "count": 1
+      },
+      {
+        "brand": "埃安",
+        "count": 1
+      }
+    ]
   }
 ]

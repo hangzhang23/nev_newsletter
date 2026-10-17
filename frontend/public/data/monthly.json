@@ -397,24 +397,28 @@
   },
   {
     "month": "2026-10",
-    "total": 8,
+    "total": 13,
     "priceBands": [
       {
         "band": "待公布",
-        "count": 8
+        "count": 13
       }
     ],
     "powertrains": [
       {
         "type": "纯电",
-        "count": 5
+        "count": 7
       },
       {
         "type": "插混",
-        "count": 2
+        "count": 4
       },
       {
         "type": "未知",
+        "count": 1
+      },
+      {
+        "type": "增程",
         "count": 1
       }
     ],
