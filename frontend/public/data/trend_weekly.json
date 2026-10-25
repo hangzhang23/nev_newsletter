@@ -479,15 +479,11 @@
     "week": "W34",
     "start": "2026-08-16",
     "end": "2026-08-22",
-    "total": 10,
+    "total": 9,
     "byBrand": [
       {
         "brand": "比亚迪",
         "count": 2
-      },
-      {
-        "brand": "上汽荣威",
-        "count": 1
       },
       {
         "brand": "魏牌",
@@ -727,7 +723,7 @@
     "week": "W40",
     "start": "2026-09-28",
     "end": "2026-10-03",
-    "total": 14,
+    "total": 13,
     "byBrand": [
       {
         "brand": "鸿蒙智行",
@@ -735,10 +731,6 @@
       },
       {
         "brand": "上汽大众",
-        "count": 1
-      },
-      {
-        "brand": "捷达",
         "count": 1
       },
       {
@@ -835,6 +827,42 @@
       },
       {
         "brand": "埃安",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W43",
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "total": 7,
+    "byBrand": [
+      {
+        "brand": "长安启源",
+        "count": 1
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "北汽",
+        "count": 1
+      },
+      {
+        "brand": "捷达",
+        "count": 1
+      },
+      {
+        "brand": "东风风神",
+        "count": 1
+      },
+      {
+        "brand": "荣威",
+        "count": 1
+      },
+      {
+        "brand": "长安",
         "count": 1
       }
     ]

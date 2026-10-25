@@ -257,11 +257,11 @@
   },
   {
     "month": "2026-08",
-    "total": 36,
+    "total": 35,
     "priceBands": [
       {
         "band": "15-20万",
-        "count": 4
+        "count": 3
       },
       {
         "band": "30万以上",
@@ -295,7 +295,7 @@
       },
       {
         "type": "增程",
-        "count": 7
+        "count": 6
       },
       {
         "type": "燃油",
@@ -327,11 +327,11 @@
   },
   {
     "month": "2026-09",
-    "total": 54,
+    "total": 53,
     "priceBands": [
       {
         "band": "待公布",
-        "count": 26
+        "count": 25
       },
       {
         "band": "20-30万",
@@ -353,7 +353,7 @@
     "powertrains": [
       {
         "type": "纯电",
-        "count": 26
+        "count": 25
       },
       {
         "type": "增程",
@@ -397,34 +397,50 @@
   },
   {
     "month": "2026-10",
-    "total": 13,
+    "total": 20,
     "priceBands": [
       {
         "band": "待公布",
         "count": 13
+      },
+      {
+        "band": "10-15万",
+        "count": 4
+      },
+      {
+        "band": "10万内",
+        "count": 2
+      },
+      {
+        "band": "15-20万",
+        "count": 1
       }
     ],
     "powertrains": [
       {
         "type": "纯电",
-        "count": 7
+        "count": 9
       },
       {
         "type": "插混",
+        "count": 6
+      },
+      {
+        "type": "增程",
         "count": 4
       },
       {
         "type": "未知",
-        "count": 1
-      },
-      {
-        "type": "增程",
         "count": 1
       }
     ],
     "topBrands": [
       {
         "brand": "吉利银河",
+        "count": 2
+      },
+      {
+        "brand": "比亚迪",
         "count": 2
       },
       {
@@ -437,10 +453,6 @@
       },
       {
         "brand": "宝马",
-        "count": 1
-      },
-      {
-        "brand": "蔚来",
         "count": 1
       }
     ]

@@ -3,7 +3,7 @@
     "name": "比亚迪",
     "color": "#EF4444",
     "isPrimary": true,
-    "frequency": 17
+    "frequency": 18
   },
   {
     "name": "鸿蒙智行",
@@ -156,6 +156,12 @@
     "frequency": 2
   },
   {
+    "name": "东风风神",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
     "name": "别克",
     "color": "#525252",
     "isPrimary": false,
@@ -246,6 +252,12 @@
     "frequency": 2
   },
   {
+    "name": "长安启源",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 2
+  },
+  {
     "name": "领克",
     "color": "#525252",
     "isPrimary": false,
@@ -276,19 +288,7 @@
     "frequency": 1
   },
   {
-    "name": "上汽荣威",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
     "name": "东风日产",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 1
-  },
-  {
-    "name": "东风风神",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -307,6 +307,12 @@
   },
   {
     "name": "北京现代",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "北汽",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -396,6 +402,12 @@
     "frequency": 1
   },
   {
+    "name": "荣威",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
     "name": "莲花Lotus",
     "color": "#525252",
     "isPrimary": false,
@@ -408,7 +420,7 @@
     "frequency": 1
   },
   {
-    "name": "长安启源",
+    "name": "长安",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
