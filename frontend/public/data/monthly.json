@@ -397,7 +397,7 @@
   },
   {
     "month": "2026-10",
-    "total": 20,
+    "total": 30,
     "priceBands": [
       {
         "band": "待公布",
@@ -405,29 +405,33 @@
       },
       {
         "band": "10-15万",
-        "count": 4
+        "count": 8
       },
       {
         "band": "10万内",
-        "count": 2
+        "count": 4
       },
       {
         "band": "15-20万",
         "count": 1
+      },
+      {
+        "band": "20-30万",
+        "count": 4
       }
     ],
     "powertrains": [
       {
         "type": "纯电",
-        "count": 9
+        "count": 14
       },
       {
         "type": "插混",
-        "count": 6
+        "count": 8
       },
       {
         "type": "增程",
-        "count": 4
+        "count": 7
       },
       {
         "type": "未知",
@@ -436,11 +440,11 @@
     ],
     "topBrands": [
       {
-        "brand": "吉利银河",
-        "count": 2
+        "brand": "比亚迪",
+        "count": 3
       },
       {
-        "brand": "比亚迪",
+        "brand": "吉利银河",
         "count": 2
       },
       {

@@ -866,5 +866,53 @@
         "count": 1
       }
     ]
+  },
+  {
+    "week": "W44",
+    "start": "2026-10-26",
+    "end": "2026-11-01",
+    "total": 10,
+    "byBrand": [
+      {
+        "brand": "奇瑞风云",
+        "count": 1
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "魏牌",
+        "count": 1
+      },
+      {
+        "brand": "理想",
+        "count": 1
+      },
+      {
+        "brand": "一汽奔腾",
+        "count": 1
+      },
+      {
+        "brand": "北汽新能源",
+        "count": 1
+      },
+      {
+        "brand": "小鹏",
+        "count": 1
+      },
+      {
+        "brand": "智己",
+        "count": 1
+      },
+      {
+        "brand": "阿维塔",
+        "count": 1
+      },
+      {
+        "brand": "奕派",
+        "count": 1
+      }
+    ]
   }
 ]
