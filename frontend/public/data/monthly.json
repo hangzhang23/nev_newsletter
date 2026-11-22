@@ -327,11 +327,11 @@
   },
   {
     "month": "2026-09",
-    "total": 53,
+    "total": 52,
     "priceBands": [
       {
         "band": "待公布",
-        "count": 25
+        "count": 24
       },
       {
         "band": "20-30万",
@@ -356,11 +356,11 @@
         "count": 25
       },
       {
-        "type": "增程",
-        "count": 13
+        "type": "插混",
+        "count": 12
       },
       {
-        "type": "插混",
+        "type": "增程",
         "count": 12
       },
       {
@@ -382,22 +382,22 @@
         "count": 3
       },
       {
-        "brand": "鸿蒙智行",
-        "count": 3
-      },
-      {
         "brand": "理想",
         "count": 2
       },
       {
         "brand": "奇瑞捷途",
         "count": 2
+      },
+      {
+        "brand": "吉利银河",
+        "count": 2
       }
     ]
   },
   {
     "month": "2026-10",
-    "total": 30,
+    "total": 29,
     "priceBands": [
       {
         "band": "待公布",
@@ -410,10 +410,6 @@
       {
         "band": "10万内",
         "count": 4
-      },
-      {
-        "band": "15-20万",
-        "count": 1
       },
       {
         "band": "20-30万",
@@ -431,7 +427,7 @@
       },
       {
         "type": "增程",
-        "count": 7
+        "count": 6
       },
       {
         "type": "未知",
@@ -457,6 +453,72 @@
       },
       {
         "brand": "宝马",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "month": "2026-11",
+    "total": 31,
+    "priceBands": [
+      {
+        "band": "15-20万",
+        "count": 7
+      },
+      {
+        "band": "10万内",
+        "count": 5
+      },
+      {
+        "band": "20-30万",
+        "count": 7
+      },
+      {
+        "band": "10-15万",
+        "count": 7
+      },
+      {
+        "band": "30万以上",
+        "count": 5
+      }
+    ],
+    "powertrains": [
+      {
+        "type": "纯电",
+        "count": 13
+      },
+      {
+        "type": "插混",
+        "count": 11
+      },
+      {
+        "type": "增程",
+        "count": 6
+      },
+      {
+        "type": "未知",
+        "count": 1
+      }
+    ],
+    "topBrands": [
+      {
+        "brand": "鸿蒙智行",
+        "count": 3
+      },
+      {
+        "brand": "捷途",
+        "count": 2
+      },
+      {
+        "brand": "奕派",
+        "count": 1
+      },
+      {
+        "brand": "吉利银河",
+        "count": 1
+      },
+      {
+        "brand": "长安",
         "count": 1
       }
     ]

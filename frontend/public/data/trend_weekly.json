@@ -723,11 +723,11 @@
     "week": "W40",
     "start": "2026-09-28",
     "end": "2026-10-03",
-    "total": 13,
+    "total": 12,
     "byBrand": [
       {
         "brand": "鸿蒙智行",
-        "count": 3
+        "count": 2
       },
       {
         "brand": "上汽大众",
@@ -835,7 +835,7 @@
     "week": "W43",
     "start": "2026-10-19",
     "end": "2026-10-25",
-    "total": 7,
+    "total": 6,
     "byBrand": [
       {
         "brand": "长安启源",
@@ -859,10 +859,6 @@
       },
       {
         "brand": "荣威",
-        "count": 1
-      },
-      {
-        "brand": "长安",
         "count": 1
       }
     ]
@@ -911,6 +907,146 @@
       },
       {
         "brand": "奕派",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W45",
+    "start": "2026-11-02",
+    "end": "2026-11-07",
+    "total": 10,
+    "byBrand": [
+      {
+        "brand": "奕派",
+        "count": 1
+      },
+      {
+        "brand": "吉利银河",
+        "count": 1
+      },
+      {
+        "brand": "长安",
+        "count": 1
+      },
+      {
+        "brand": "极氪",
+        "count": 1
+      },
+      {
+        "brand": "领克",
+        "count": 1
+      },
+      {
+        "brand": "智己",
+        "count": 1
+      },
+      {
+        "brand": "比亚迪",
+        "count": 1
+      },
+      {
+        "brand": "smart",
+        "count": 1
+      },
+      {
+        "brand": "仰望",
+        "count": 1
+      },
+      {
+        "brand": "红旗",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W46",
+    "start": "2026-11-08",
+    "end": "2026-11-14",
+    "total": 11,
+    "byBrand": [
+      {
+        "brand": "奇瑞风云",
+        "count": 1
+      },
+      {
+        "brand": "上汽大众",
+        "count": 1
+      },
+      {
+        "brand": "腾势",
+        "count": 1
+      },
+      {
+        "brand": "北京越野",
+        "count": 1
+      },
+      {
+        "brand": "吉利",
+        "count": 1
+      },
+      {
+        "brand": "埃安",
+        "count": 1
+      },
+      {
+        "brand": "岚图",
+        "count": 1
+      },
+      {
+        "brand": "东风日产",
+        "count": 1
+      },
+      {
+        "brand": "启境",
+        "count": 1
+      },
+      {
+        "brand": "鸿蒙智行",
+        "count": 1
+      },
+      {
+        "brand": "极狐",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "week": "W47",
+    "start": "2026-11-15",
+    "end": "2026-11-21",
+    "total": 10,
+    "byBrand": [
+      {
+        "brand": "捷途",
+        "count": 2
+      },
+      {
+        "brand": "鸿蒙智行",
+        "count": 2
+      },
+      {
+        "brand": "北汽极狐",
+        "count": 1
+      },
+      {
+        "brand": "一汽-大众",
+        "count": 1
+      },
+      {
+        "brand": "猛士科技",
+        "count": 1
+      },
+      {
+        "brand": "广汽传祺",
+        "count": 1
+      },
+      {
+        "brand": "奇瑞iCAR",
+        "count": 1
+      },
+      {
+        "brand": "方程豹",
         "count": 1
       }
     ]

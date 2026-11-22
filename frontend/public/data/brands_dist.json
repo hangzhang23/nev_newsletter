@@ -3,13 +3,13 @@
     "name": "比亚迪",
     "color": "#EF4444",
     "isPrimary": true,
-    "frequency": 19
+    "frequency": 20
   },
   {
     "name": "鸿蒙智行",
     "color": "#A855F7",
     "isPrimary": true,
-    "frequency": 14
+    "frequency": 16
   },
   {
     "name": "零跑",
@@ -18,15 +18,33 @@
     "frequency": 11
   },
   {
-    "name": "小鹏",
-    "color": "#3B82F6",
+    "name": "智己",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 7
+  },
+  {
+    "name": "吉利",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 6
+  },
+  {
+    "name": "吉利银河",
+    "color": "#22C55E",
     "isPrimary": true,
     "frequency": 6
   },
   {
-    "name": "智己",
-    "color": "#525252",
-    "isPrimary": false,
+    "name": "奇瑞风云",
+    "color": "#4F46E5",
+    "isPrimary": true,
+    "frequency": 6
+  },
+  {
+    "name": "小鹏",
+    "color": "#3B82F6",
+    "isPrimary": true,
     "frequency": 6
   },
   {
@@ -42,33 +60,33 @@
     "frequency": 6
   },
   {
+    "name": "一汽-大众",
+    "color": "#64748B",
+    "isPrimary": true,
+    "frequency": 5
+  },
+  {
     "name": "五菱",
     "color": "#EAB308",
     "isPrimary": true,
     "frequency": 5
   },
   {
-    "name": "吉利",
+    "name": "红旗",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 5
   },
   {
-    "name": "吉利银河",
-    "color": "#22C55E",
-    "isPrimary": true,
-    "frequency": 5
+    "name": "埃安",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 4
   },
   {
-    "name": "奇瑞风云",
-    "color": "#4F46E5",
-    "isPrimary": true,
-    "frequency": 5
-  },
-  {
-    "name": "一汽-大众",
-    "color": "#64748B",
-    "isPrimary": true,
+    "name": "奕派",
+    "color": "#525252",
+    "isPrimary": false,
     "frequency": 4
   },
   {
@@ -78,7 +96,31 @@
     "frequency": 4
   },
   {
-    "name": "红旗",
+    "name": "岚图",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 4
+  },
+  {
+    "name": "捷途",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 4
+  },
+  {
+    "name": "极氪",
+    "color": "#14B8A6",
+    "isPrimary": true,
+    "frequency": 4
+  },
+  {
+    "name": "极狐",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 4
+  },
+  {
+    "name": "腾势",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 4
@@ -90,13 +132,19 @@
     "frequency": 4
   },
   {
-    "name": "埃安",
+    "name": "smart",
+    "color": "#EC4899",
+    "isPrimary": true,
+    "frequency": 3
+  },
+  {
+    "name": "上汽大众",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 3
   },
   {
-    "name": "奕派",
+    "name": "北京越野",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 3
@@ -108,19 +156,7 @@
     "frequency": 3
   },
   {
-    "name": "岚图",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 3
-  },
-  {
-    "name": "极氪",
-    "color": "#14B8A6",
-    "isPrimary": true,
-    "frequency": 3
-  },
-  {
-    "name": "极狐",
+    "name": "方程豹",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 3
@@ -132,31 +168,25 @@
     "frequency": 3
   },
   {
-    "name": "腾势",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 3
-  },
-  {
     "name": "长安马自达",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 3
   },
   {
-    "name": "smart",
-    "color": "#EC4899",
-    "isPrimary": true,
-    "frequency": 2
+    "name": "领克",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 3
   },
   {
-    "name": "上汽大众",
+    "name": "上汽大通",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
   },
   {
-    "name": "上汽大通",
+    "name": "东风日产",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -174,7 +204,7 @@
     "frequency": 2
   },
   {
-    "name": "北京越野",
+    "name": "启境",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -228,13 +258,7 @@
     "frequency": 2
   },
   {
-    "name": "捷途",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 2
-  },
-  {
-    "name": "方程豹",
+    "name": "广汽传祺",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -259,12 +283,6 @@
   },
   {
     "name": "阿维塔",
-    "color": "#525252",
-    "isPrimary": false,
-    "frequency": 2
-  },
-  {
-    "name": "领克",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 2
@@ -300,13 +318,13 @@
     "frequency": 1
   },
   {
-    "name": "东风日产",
+    "name": "乐道",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
   },
   {
-    "name": "乐道",
+    "name": "仰望",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -336,13 +354,13 @@
     "frequency": 1
   },
   {
-    "name": "名爵",
+    "name": "北汽极狐",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
   },
   {
-    "name": "启境",
+    "name": "名爵",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -354,13 +372,13 @@
     "frequency": 1
   },
   {
-    "name": "宾利",
+    "name": "奇瑞iCAR",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
   },
   {
-    "name": "广汽传祺",
+    "name": "宾利",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
@@ -409,6 +427,12 @@
   },
   {
     "name": "特斯拉",
+    "color": "#525252",
+    "isPrimary": false,
+    "frequency": 1
+  },
+  {
+    "name": "猛士科技",
     "color": "#525252",
     "isPrimary": false,
     "frequency": 1
