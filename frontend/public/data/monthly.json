@@ -257,7 +257,7 @@
   },
   {
     "month": "2026-08",
-    "total": 35,
+    "total": 34,
     "priceBands": [
       {
         "band": "15-20万",
@@ -269,7 +269,7 @@
       },
       {
         "band": "20-30万",
-        "count": 10
+        "count": 9
       },
       {
         "band": "10-15万",
@@ -287,7 +287,7 @@
     "powertrains": [
       {
         "type": "纯电",
-        "count": 18
+        "count": 17
       },
       {
         "type": "插混",
@@ -459,11 +459,11 @@
   },
   {
     "month": "2026-11",
-    "total": 31,
+    "total": 40,
     "priceBands": [
       {
         "band": "15-20万",
-        "count": 7
+        "count": 8
       },
       {
         "band": "10万内",
@@ -471,55 +471,55 @@
       },
       {
         "band": "20-30万",
-        "count": 7
+        "count": 11
       },
       {
         "band": "10-15万",
-        "count": 7
+        "count": 8
       },
       {
         "band": "30万以上",
-        "count": 5
+        "count": 7
+      },
+      {
+        "band": "待公布",
+        "count": 1
       }
     ],
     "powertrains": [
       {
         "type": "纯电",
-        "count": 13
+        "count": 19
       },
       {
         "type": "插混",
-        "count": 11
+        "count": 15
       },
       {
         "type": "增程",
         "count": 6
-      },
-      {
-        "type": "未知",
-        "count": 1
       }
     ],
     "topBrands": [
       {
+        "brand": "比亚迪",
+        "count": 3
+      },
+      {
         "brand": "鸿蒙智行",
         "count": 3
+      },
+      {
+        "brand": "领克",
+        "count": 2
       },
       {
         "brand": "捷途",
         "count": 2
       },
       {
-        "brand": "奕派",
-        "count": 1
-      },
-      {
-        "brand": "吉利银河",
-        "count": 1
-      },
-      {
-        "brand": "长安",
-        "count": 1
+        "brand": "宝马",
+        "count": 2
       }
     ]
   }
